@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				63
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				48,
+				73
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				22,
+				-34
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-27,
+				244
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				23,
+				86
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				89,
+				53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "hey"
+		},
+		{
+			"offsets": [
+				50,
+				92
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "sex",
+			"indices": [],
+			"name": "funny"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Rayman",
+	"position": [
+		-40,
+		-100
+	],
+	"healthicon": "rayman",
+	"flip_x": false,
+	"healthbar_colors": [
+		215,
+		140,
+		26
+	],
+	"camera_position": [
+		190,
+		150
+	],
+	"sing_duration": 6,
+	"scale": 0.7
+}

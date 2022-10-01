@@ -1,0 +1,156 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Once upon a time, BF and GF were driving through some snowy hills until.....",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "MyDad"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Awww Babe, i think one of our tires broke"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Oof, should we try to get this repaired?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yeah but unfortunately i don't see any houses nearby...."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Hi guys!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "FROSTBITE!?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yup fellas! it's me!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Long time no see! i see that you brought your girl here too!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Of course! she's my partner afer all..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "True True..., what brings you here?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ooohhh so one of our tires broke while we were driving nearby"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ohh damn, that sucks."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Wanna stay at mines tonight?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sure thing!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "Frosty",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Alright bet."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Wanna hear some of the songs that i have here with me while we are at it?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sure, why not."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'll say we shall start now!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "frosty",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Good Luck!"
+		}
+	]
+}

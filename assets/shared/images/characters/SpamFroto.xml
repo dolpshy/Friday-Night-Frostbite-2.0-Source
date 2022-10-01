@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SpamFroto.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Down SpamFloff0000" x="0" y="0" width="884" height="682" frameX="-9" frameY="-70" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0001" x="884" y="0" width="884" height="682" frameX="-9" frameY="-70" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0002" x="1768" y="0" width="884" height="707" frameX="-9" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0003" x="2652" y="0" width="884" height="707" frameX="-9" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0004" x="3536" y="0" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0005" x="4412" y="0" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0006" x="5288" y="0" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0007" x="6164" y="0" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0008" x="7040" y="0" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0009" x="0" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0010" x="876" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0011" x="1752" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0012" x="2628" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0013" x="3504" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0014" x="4380" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0015" x="5256" y="707" width="876" height="707" frameX="0" frameY="-40" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0016" x="6132" y="707" width="876" height="699" frameX="-29" frameY="-41" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0017" x="7008" y="707" width="876" height="699" frameX="-29" frameY="-41" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0018" x="0" y="1414" width="876" height="729" frameX="-29" frameY="0" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Down SpamFloff0019" x="876" y="1414" width="876" height="729" frameX="-29" frameY="0" frameWidth="905" frameHeight="752"/>
+	<SubTexture name="Idle SpamFloff0000" x="1752" y="1414" width="884" height="745" frameX="-9" frameY="-49" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0001" x="2636" y="1414" width="884" height="745" frameX="-9" frameY="-49" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0002" x="3520" y="1414" width="884" height="755" frameX="-9" frameY="-39" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0003" x="4404" y="1414" width="884" height="755" frameX="-9" frameY="-39" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0004" x="5288" y="1414" width="876" height="794" frameX="0" frameY="0" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0005" x="6164" y="1414" width="876" height="794" frameX="0" frameY="0" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0006" x="7040" y="1414" width="876" height="759" frameX="0" frameY="-34" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0007" x="0" y="2208" width="876" height="759" frameX="0" frameY="-34" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0008" x="876" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0009" x="1752" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0010" x="2628" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0011" x="3504" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0012" x="4380" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0013" x="5256" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Idle SpamFloff0014" x="6132" y="2208" width="876" height="764" frameX="0" frameY="-29" frameWidth="893" frameHeight="794"/>
+	<SubTexture name="Left SpamFloff 0000" x="7008" y="2208" width="884" height="730" frameX="-7" frameY="0" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0001" x="0" y="2972" width="884" height="730" frameX="-7" frameY="0" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0002" x="884" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0003" x="1760" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0004" x="2636" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0005" x="3512" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0006" x="4388" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0007" x="5264" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0008" x="6140" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0009" x="7016" y="2972" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0010" x="0" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0011" x="876" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0012" x="1752" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0013" x="2628" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0014" x="3504" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0015" x="4380" y="3703" width="876" height="731" frameX="0" frameY="-3" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0016" x="5256" y="3703" width="876" height="729" frameX="-29" frameY="-18" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0017" x="6132" y="3703" width="876" height="729" frameX="-29" frameY="-18" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0018" x="7008" y="3703" width="875" height="744" frameX="-54" frameY="-13" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Left SpamFloff 0019" x="0" y="4447" width="875" height="744" frameX="-54" frameY="-13" frameWidth="929" frameHeight="757"/>
+	<SubTexture name="Right SpamFloff 0000" x="875" y="4447" width="822" height="694" frameX="-70" frameY="-21" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0001" x="1697" y="4447" width="822" height="694" frameX="-70" frameY="-21" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0002" x="2519" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0003" x="3347" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0004" x="4175" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0005" x="5003" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0006" x="5831" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0007" x="6659" y="4447" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0008" x="0" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0009" x="828" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0010" x="1656" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0011" x="2484" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0012" x="3312" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0013" x="4140" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0014" x="4968" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0015" x="5796" y="5191" width="828" height="706" frameX="-65" frameY="-18" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0016" x="6624" y="5191" width="873" height="725" frameX="0" frameY="-14" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0017" x="0" y="5916" width="873" height="725" frameX="0" frameY="-14" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0018" x="873" y="5916" width="873" height="749" frameX="0" frameY="0" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Right SpamFloff 0019" x="1746" y="5916" width="873" height="749" frameX="0" frameY="0" frameWidth="893" frameHeight="749"/>
+	<SubTexture name="Up SpamFloff0000" x="2619" y="5916" width="884" height="761" frameX="-9" frameY="-3" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0001" x="3503" y="5916" width="884" height="761" frameX="-9" frameY="-3" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0002" x="4387" y="5916" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0003" x="5263" y="5916" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0004" x="6139" y="5916" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0005" x="7015" y="5916" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0006" x="0" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0007" x="876" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0008" x="1752" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0009" x="2628" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0010" x="3504" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0011" x="4380" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0012" x="5256" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0013" x="6132" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0014" x="7008" y="6677" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0015" x="0" y="7424" width="876" height="747" frameX="0" frameY="-18" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0016" x="876" y="7424" width="876" height="757" frameX="0" frameY="-11" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0017" x="1752" y="7424" width="876" height="757" frameX="0" frameY="-11" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0018" x="2628" y="7424" width="876" height="765" frameX="0" frameY="0" frameWidth="893" frameHeight="768"/>
+	<SubTexture name="Up SpamFloff0019" x="3504" y="7424" width="876" height="765" frameX="0" frameY="0" frameWidth="893" frameHeight="768"/>
+</TextureAtlas>

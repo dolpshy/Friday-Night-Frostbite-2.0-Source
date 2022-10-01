@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		90,
+		60
+	],
+	"scale": 1.15,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_name": "",
+			"idle_name": "talking"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "pissed",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "BF PISSED LOOP",
+			"idle_name": "ANGY"
+		},
+		{
+			"loop_name": "",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "EVIL",
+			"anim": "evil",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "bruh",
+			"anim": "bruh",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "the_funni"
+}

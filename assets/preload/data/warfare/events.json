@@ -1,0 +1,5274 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": "stage",
+		"player1": "bf-christmas",
+		"player2": "frostgun",
+		"player3": null,
+		"events": [
+			[
+				8914.28571428571,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				9685.71428571428,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				13028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				13371.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				14400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				15771.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				16285.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				17142.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				17828.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				17914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18085.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18171.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18257.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18342.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18428.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				18514.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				19542.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				20228.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				20914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				21085.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				22542.8571428571,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				23057.1428571429,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				24685.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				25028.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				25371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				25714.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				26057.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				26400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				26742.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				26914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				27085.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				27257.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				27428.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				27771.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				28114.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				28457.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				28800,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				29142.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				29485.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				29828.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				29914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				30085.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				30171.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				30514.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				30857.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				31200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				31542.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				31885.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				32228.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				32400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				32571.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				32742.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				32914.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				33257.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				33600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun"
+					]
+				]
+			],
+			[
+				33942.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				34285.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				34628.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				34971.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				35142.8571428571,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				35314.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				35657.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				36000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				36342.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				36685.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				37028.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				37371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				37714.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				38057.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				38400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				38742.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				39085.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				39428.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				39600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				39771.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				40114.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				40457.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				40800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				41142.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				41485.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				41828.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				42171.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				42514.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				43028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				43371.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				43885.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				44228.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				44571.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				44914.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				45257.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				45600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				45942.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					],
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				46285.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					],
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				46628.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				46971.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				47314.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				47657.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				48000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				48342.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				48685.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				49028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				49114.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				49200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				49285.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				49371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				49371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				49714.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				50057.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				50400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				50742.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				51085.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				51428.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				51771.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				52114.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				52114.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				52457.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				52800,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				53142.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				53485.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				53828.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				54171.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				54514.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				54600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				54685.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				54771.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				54857.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				55200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				55542.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				55885.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				56228.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				56571.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					],
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				56914.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					],
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				57257.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				57600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				57942.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				58285.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				58628.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				58971.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				59314.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				59657.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				59828.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				60171.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				60342.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				60685.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				61028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				61371.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				61714.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				62057.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				62400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				62742.8571428572,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				62828.5714285715,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				62914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				63000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				63085.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				63428.5714285715,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				63771.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				64114.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				64457.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				64800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				65142.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				65314.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				65485.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				65657.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				65828.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				66171.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				66514.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				66857.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				67200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				67542.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				67628.5714285714,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				67885.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				68142.8571428572,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				68228.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				68571.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				68914.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				69257.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				69600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				69942.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				70285.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				70628.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				70800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				70971.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				71142.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				71314.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				71657.1428571429,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				72000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				72342.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				72685.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				73028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				73371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				73714.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				73800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				73885.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				73971.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				74057.1428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				74400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				74742.8571428572,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				75085.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				75428.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				75771.4285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				76114.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				76285.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				76457.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				76628.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				76800,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				77142.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				77485.7142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				77828.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				78171.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				78514.2857142858,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				78685.7142857142,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				78857.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				79028.5714285714,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				79200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				79542.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				79885.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				80228.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				80571.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				80742.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				80914.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				81257.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				81600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				81942.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				82028.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				82114.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				82200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				82285.7142857142,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				82628.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				82971.4285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				83314.2857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				83485.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				83657.1428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				83999.9999999999,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				84342.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				84685.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				84771.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				84857.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				84942.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				85028.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				85371.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				85714.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				86057.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				86228.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				86400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				86742.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				87085.7142857142,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				87428.5714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				87514.2857142856,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				87599.9999999999,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				87685.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				87771.4285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				88114.2857142856,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				88457.1428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				88799.9999999999,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				88971.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				89142.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				89485.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				89828.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				90171.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				90257.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				90342.8571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				91885.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				92571.4285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				93257.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				93599.9999999999,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				93942.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				94285.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				94457.1428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				94799.9999999999,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				95399.9999999999,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				96342.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				96685.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				97028.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				97371.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				97542.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				97714.2857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				98057.1428571427,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				98400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				98742.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				99085.7142857142,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				99428.5714285713,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				99771.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				100114.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				100285.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				100457.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				100800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				101142.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				101485.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				101485.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				101828.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				102000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				102171.428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				102514.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				102857.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				103200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				103542.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				103885.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				104228.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				104228.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				104571.428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				104742.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				104914.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				105257.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				105600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				105942.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				106285.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				106628.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				106971.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				107314.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				107657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				108000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				108342.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				108685.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				109028.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				109371.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				109542.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				109714.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				110057.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				110400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				110742.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				111085.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				111085.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				111428.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				111771.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				112114.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				112200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				112285.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				112457.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				112800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				113142.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				113485.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				113657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				113828.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				113828.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				114171.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				114514.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				114857.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				115028.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				115200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				115542.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				115885.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				116228.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				116571.428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				116914.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				117257.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				117428.571428571,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				117600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				117942.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				118285.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				118628.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				118971.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				119314.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				119314.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				119657.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				120342.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				120685.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				120685.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				121028.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				121371.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				121714.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				122057.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				122400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				122742.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				123085.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				123428.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				123428.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				123771.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				124114.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				124285.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				124457.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				124800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				125142.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				125485.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				125657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				125828.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				126171.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				126514.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				126857.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				127200,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				127371.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				127542.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				127885.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				128228.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				128571.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				128914.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				128914.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				129257.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				129600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				129771.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				129942.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				130114.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				130285.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				130628.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				130971.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				131314.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				131657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				132000,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				132342.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				132514.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				132685.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				132857.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				133028.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				133371.428571428,
+				[
+					[
+						"Play Animation",
+						"reload",
+						"frostgun "
+					]
+				]
+			],
+			[
+				133714.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				133885.714285714,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				134057.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				134400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				134742.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				135085.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				135428.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				135771.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				136114.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				136457.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				136800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				137142.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				137485.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				137828.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				138171.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				138514.285714285,
+				[
+					[
+						"Add Camera Zoom",
+						"0.015",
+						"0.03"
+					]
+				]
+			],
+			[
+				138514.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				138857.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139542.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139628.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139714.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				139885.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				140228.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				140571.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				140914.285714285,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				141257.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				141600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				141942.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				142114.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				142285.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				142457.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				142628.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				142971.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				143314.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				143657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				144000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				144342.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				144685.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				145028.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				145114.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				145200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				145371.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				145714.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				146057.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				146400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				146742.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				147085.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				147428.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				147600,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				147771.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				147942.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				148114.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				148457.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				148800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				149142.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				149485.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				149828.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					],
+					[
+						"Play Animation",
+						"reload",
+						"frostgun"
+					]
+				]
+			],
+			[
+				150171.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				150428.571428571,
+				[
+					[
+						"Play Animation",
+						"guncock",
+						"frostgun"
+					]
+				]
+			],
+			[
+				150514.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				150857.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				151200,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				151542.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				151885.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				152228.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				152571.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				152914.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				153085.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				153257.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				153428.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				153600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				153942.857142857,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				154285.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				154628.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				154971.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				155314.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				155657.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				155914.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				156000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				156085.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				156171.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				156257.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				156342.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				156342.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				156685.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				157028.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				157371.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				157714.285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				158057.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				158400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				158571.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				158742.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				158914.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				159085.714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				159428.571428571,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				159771.428571428,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				160114.285714286,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				160457.142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				160800,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				161142.857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			],
+			[
+				161400,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				161485.714285714,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				161571.428571428,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				161657.142857143,
+				[
+					[
+						"Play Animation",
+						"Shoot",
+						"frostgun "
+					]
+				]
+			],
+			[
+				161828.571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.03",
+						"0.06"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf-christmas",
+		"bpm": 175,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Warfare"
+	}
+}

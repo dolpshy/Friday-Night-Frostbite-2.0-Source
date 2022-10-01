@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"expression": "confused",
+			"text": "Oh damn i didn\"'t actually think you were gonna beat that",
+			"boxState": "normal",
+			"portrait": "frosty",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "talk",
+			"text": "are you gonna turn into a 3rd song phase now",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "BoyDialogue"
+		},
+		{
+			"expression": "excited",
+			"text": "Yeah basically",
+			"boxState": "normal",
+			"portrait": "frosty",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "shocked",
+			"text": "GRRRAAAHHHHHHHHHHHHHHHHHH",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "frosty"
+		},
+		{
+			"expression": "talk",
+			"text": "Yoooooooooo",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni"
+		},
+		{
+			"expression": "talk",
+			"text": "I'm a darker blue now!!!",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "excited",
+			"text": "Uhhmmm yeah that makes absolutely sense",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "bruh",
+			"text": "Yeah, you know what, let's just start this song before i die from waiting...",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "pissed",
+			"text": "Let's go!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": ""
+		}
+	]
+}

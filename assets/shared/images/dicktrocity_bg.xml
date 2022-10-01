@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dicktrocity bg.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bench_bigger0000" x="0" y="0" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0001" x="0" y="0" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0002" x="2950" y="0" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0003" x="2950" y="0" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0004" x="0" y="2080" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0005" x="0" y="2080" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0006" x="0" y="4160" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0007" x="0" y="4160" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0008" x="2950" y="2080" width="2950" height="2080"/>
+	<SubTexture name="bench_bigger0009" x="2950" y="2080" width="2950" height="2080"/>
+</TextureAtlas>

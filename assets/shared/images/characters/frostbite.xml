@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frostbite.png"><SubTexture name="frostbite right0000" x="4111" y="0" width="1070" height="1466" frameX="-623" frameY="-250" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite right0001" x="1017" y="1534" width="1069" height="1469" frameX="-614" frameY="-247" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite left0000" x="3068" y="3037" width="988" height="1451" frameX="-560" frameY="-160" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite left0001" x="2075" y="3037" width="993" height="1452" frameX="-565" frameY="-159" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite left0002" x="1078" y="3037" width="997" height="1453" frameX="-568" frameY="-158" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite right0002" x="3051" y="0" width="1060" height="1469" frameX="-610" frameY="-247" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite right0003" x="0" y="3037" width="1078" height="1463" frameX="-628" frameY="-253" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite down0000" x="0" y="5928" width="1545" height="1155" frameX="-508" frameY="-570" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite down0001" x="6085" y="0" width="1543" height="1168" frameX="-513" frameY="-557" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite down0002" x="4291" y="4500" width="1540" height="1173" frameX="-513" frameY="-552" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite left0003" x="3051" y="1469" width="1003" height="1454" frameX="-575" frameY="-157" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite up0000" x="0" y="0" width="1017" height="1534" frameX="-560" frameY="-66" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite up0001" x="1017" y="0" width="1017" height="1525" frameX="-560" frameY="-74" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite up0002" x="2034" y="0" width="1017" height="1517" frameX="-560" frameY="-80" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite dow0003" x="2741" y="4500" width="1550" height="1199" frameX="-516" frameY="-540" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0000" x="5181" y="0" width="904" height="1440" frameX="-563" frameY="-258" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0001" x="4056" y="3037" width="893" height="1443" frameX="-569" frameY="-255" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0002" x="2086" y="1534" width="893" height="1453" frameX="-569" frameY="-245" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0003" x="4111" y="1466" width="893" height="1461" frameX="-569" frameY="-237" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite up0003" x="0" y="1534" width="1017" height="1503" frameX="-560" frameY="-94" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0004" x="4111" y="1466" width="893" height="1461" frameX="-569" frameY="-237" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0005" x="0" y="4500" width="911" height="1428" frameX="-559" frameY="-270" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0006" x="1821" y="4500" width="920" height="1417" frameX="-554" frameY="-281" frameWidth="2197" frameHeight="1901" />
+<SubTexture name="frostbite idle0007" x="911" y="4500" width="910" height="1426" frameX="-560" frameY="-272" frameWidth="2197" frameHeight="1901" />
+</TextureAtlas>

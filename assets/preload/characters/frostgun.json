@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				20,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				4,
+				47
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				41,
+				36
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				33,
+				59
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				37,
+				36
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				19,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "Shoot",
+			"indices": [],
+			"name": "shoot"
+		},
+		{
+			"offsets": [
+				15,
+				306
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "guncock",
+			"indices": [],
+			"name": "coc"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				315
+			],
+			"anim": "reload",
+			"fps": 24,
+			"name": "reload",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/frostgun",
+	"position": [
+		-320,
+		-150
+	],
+	"healthicon": "frostbiteangry",
+	"flip_x": false,
+	"healthbar_colors": [
+		114,
+		189,
+		213
+	],
+	"camera_position": [
+		120,
+		120
+	],
+	"sing_duration": 6.1,
+	"scale": 0.7
+}

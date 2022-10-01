@@ -1,0 +1,48 @@
+{
+	"storyName": "Funkin in a winter skirmish",
+	"difficulties": "EASY, NORMAL, HARD, ERECT, MANIA",
+	"hideFreeplay": false,
+	"weekBackground": "rift",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"Chilly",
+			"frostbite",
+			[
+				55,
+				160,
+				255
+			]
+		],
+		[
+			"Astral-Snowstorm",
+			"frostbite",
+			[
+				55,
+				160,
+				255
+			]
+		],
+		[
+			"Blizzard",
+			"subby",
+			[
+				55,
+				80,
+				255
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "FrostyWeek"
+}

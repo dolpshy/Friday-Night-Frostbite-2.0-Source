@@ -1,0 +1,30 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "ITS ME",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Let-Us-In",
+			"frostbite",
+			[
+				55,
+				160,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"weekName": "Custom Week"
+}

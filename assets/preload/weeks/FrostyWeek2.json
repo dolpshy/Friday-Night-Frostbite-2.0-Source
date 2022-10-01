@@ -1,0 +1,49 @@
+{
+	"storyName": "Rematch in good old frostopia",
+	"difficulties": "EASY, NORMAL, HARD, MANIA",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Swift",
+			"subby",
+			[
+				95,
+				100,
+				255
+			]
+		],
+		[
+			"Cold-Destiny",
+			"subby",
+			[
+				95,
+				100,
+				255
+			]
+		],
+		[
+			"Iceberg",
+			"choal",
+			[
+				86,
+				86,
+				106
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "FrostyWeek2"
+}

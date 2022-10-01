@@ -1,0 +1,49 @@
+{
+	"storyName": "dev team shenanigans",
+	"difficulties": "HARD",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Cantrocity",
+			"stamp",
+			[
+				255,
+				153,
+				55
+			]
+		],
+		[
+			"Heartfall",
+			"lirica",
+			[
+				206,
+				193,
+				113
+			]
+		],
+		[
+			"Rayed Out",
+			"rayman",
+			[
+				200,
+				100,
+				53
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "The Interesting Sussy Sussy"
+}

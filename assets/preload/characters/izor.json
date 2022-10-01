@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				48
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "iceman down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-27,
+				64
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "iceman up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				62
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "iceman right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				63
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "iceman idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				61
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "iceman left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Izor",
+	"position": [
+		-640,
+		-470
+	],
+	"healthicon": "Iz",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		100,
+		206
+	],
+	"camera_position": [
+		-270,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				52,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-59,
+				-38
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				19,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-215,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/choal_Tweaked",
+	"position": [
+		-370,
+		-130
+	],
+	"healthicon": "choal",
+	"flip_x": false,
+	"healthbar_colors": [
+		86,
+		86,
+		106
+	],
+	"camera_position": [
+		200,
+		-90
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

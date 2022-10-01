@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				156
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "frostbite idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				142
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "frostbite dow",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				136,
+				103
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "frostbite up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				145,
+				102
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "frostbite left"
+		},
+		{
+			"offsets": [
+				199,
+				121
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "frostbite right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/frostbite",
+	"position": [
+		-700,
+		-410
+	],
+	"healthicon": "frostbite",
+	"flip_x": false,
+	"healthbar_colors": [
+		115,
+		202,
+		246
+	],
+	"camera_position": [
+		-310,
+		330
+	],
+	"sing_duration": 6.1,
+	"scale": 0.5
+}

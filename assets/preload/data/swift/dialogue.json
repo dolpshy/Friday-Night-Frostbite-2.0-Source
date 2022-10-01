@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Hello there, again!",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "talk",
+			"text": "Haven't seen ya in awhile!",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "talk",
+			"text": "bro it's been 4 days since we last battled",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "bruh",
+			"text": "...",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "bruh",
+			"text": "Oh well let's just get this over with...",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		}
+	]
+}

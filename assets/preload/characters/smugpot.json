@@ -1,0 +1,188 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-39,
+				-57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "LMiss"
+		},
+		{
+			"offsets": [
+				-85,
+				-78
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "DMiss"
+		},
+		{
+			"offsets": [
+				-115,
+				-16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "UMiss"
+		},
+		{
+			"offsets": [
+				-106,
+				-61
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "RMiss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "firstDeath",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "deathLoop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "deathConfirm",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-108,
+				-62
+			],
+			"anim": "voiceline1",
+			"fps": 24,
+			"name": "voiceline1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-108,
+				-62
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "smug idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				207,
+				-54
+			],
+			"anim": "voiceline2",
+			"fps": 24,
+			"name": "voiceline2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				-60
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "smug idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-42,
+				-52
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "smug down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-100,
+				-43
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "smug up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-57,
+				-60
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "smug left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-93,
+				-57
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "smug right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Smugdickpot",
+	"position": [
+		0,
+		190
+	],
+	"healthicon": "dickpot",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		-30,
+		30
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

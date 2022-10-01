@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				184,
+				-37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left SpamFloff"
+		},
+		{
+			"offsets": [
+				-36,
+				-47
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down SpamFloff"
+		},
+		{
+			"offsets": [
+				18,
+				-23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up SpamFloff"
+		},
+		{
+			"offsets": [
+				-47,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right SpamFloff"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle SpamFloff"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SpamFroto",
+	"position": [
+		-430,
+		-190
+	],
+	"healthicon": "bigshit",
+	"flip_x": false,
+	"healthbar_colors": [
+		198,
+		199,
+		239
+	],
+	"camera_position": [
+		140,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

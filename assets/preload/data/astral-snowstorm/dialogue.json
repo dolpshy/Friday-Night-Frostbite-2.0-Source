@@ -1,0 +1,28 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "frosty",
+			"boxState": "normal",
+			"expression": "awkward",
+			"text": "Woah, phew! That was pretty good!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "frosty",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Wanna sing another one?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Yeah sure, let's go!"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Errhhmmm.... I'm actually surprised you're still here",
+			"boxState": "normal",
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni",
+			"boxState": "normal",
+			"expression": "evil",
+			"text": "Guess it's time to do another transformation now."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "skull emoji crossbones emoji"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Good Job on keeping up!",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "evil",
+			"text": "Though i may go a bit harder on you now, like normal fnf second song of the week dialogues say",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "excited",
+			"text": "Oh, Alright! I'm up for the challenge",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": ""
+		},
+		{
+			"expression": "evil",
+			"text": "Sweet! Time to Battle.",
+			"boxState": "normal",
+			"portrait": "the_funni",
+			"speed": 0.05,
+			"sound": ""
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "SUS",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Sussy-Balls",
+			"succ",
+			[
+				195,
+				255,
+				255
+			]
+		],
+		[
+			"Ice-Cold-Killer",
+			"succ",
+			[
+				195,
+				255,
+				255
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Custom Week"
+}

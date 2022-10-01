@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="AyDeeThree.png">
+<SubTexture name="AyDeeThree idle dance0000" x="2166" y="1409" width="536" height="270" frameX="-10" frameY="-186" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0001" x="2166" y="1105" width="536" height="304" frameX="-10" frameY="-152" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0002" x="2166" y="769" width="536" height="336" frameX="-10" frameY="-120" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0003" x="2166" y="400" width="536" height="369" frameX="-10" frameY="-86" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0004" x="2166" y="0" width="536" height="400" frameX="-10" frameY="-55" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0005" x="1630" y="435" width="536" height="422" frameX="-10" frameY="-33" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0006" x="1630" y="0" width="536" height="435" frameX="-10" frameY="-20" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree idle dance0007" x="537" y="893" width="536" height="443" frameX="-10" frameY="-11" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note DOWN0000" x="1630" y="857" width="536" height="406" frameX="-10" frameY="-49" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note DOWN0001" x="546" y="1772" width="540" height="381" frameX="-10" frameY="-74" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note DOWN0002" x="1086" y="1772" width="547" height="345" frameX="-3" frameY="-110" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note DOWN0003" x="1633" y="1772" width="555" height="306" frameX="-1" frameY="-151" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note LEFT0000" x="1073" y="893" width="546" height="440" frameX="0" frameY="-14" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note LEFT0001" x="544" y="1337" width="546" height="426" frameX="0" frameY="-29" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note LEFT0002" x="1090" y="1337" width="546" height="414" frameX="0" frameY="-41" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note LEFT0003" x="0" y="1772" width="546" height="400" frameX="0" frameY="-55" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note RIGHT0000" x="546" y="0" width="547" height="446" frameX="-9" frameY="-9" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note RIGHT0001" x="0" y="0" width="546" height="448" frameX="-10" frameY="-8" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note RIGHT0002" x="0" y="448" width="545" height="445" frameX="-11" frameY="-11" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note RIGHT0003" x="0" y="1337" width="544" height="435" frameX="-12" frameY="-21" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note UP0000" x="1093" y="445" width="537" height="444" frameX="-9" frameY="-10" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note UP0001" x="0" y="893" width="537" height="444" frameX="-9" frameY="-10" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note UP0002" x="545" y="448" width="538" height="445" frameX="-8" frameY="-9" frameWidth="556" frameHeight="465" />
+<SubTexture name="AyDeeThree Sing Note UP0003" x="1093" y="0" width="537" height="445" frameX="-8" frameY="-9" frameWidth="556" frameHeight="465" />
+</TextureAtlas>

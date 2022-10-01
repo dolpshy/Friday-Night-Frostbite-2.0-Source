@@ -1,0 +1,30 @@
+{
+	"storyName": "Now's your chance!",
+	"difficulties": "SPECIL DEAL",
+	"hideFreeplay": false,
+	"weekBackground": "basement",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Big-shot",
+			"bigshit",
+			[
+				215,
+				215,
+				255
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "bigshot"
+}

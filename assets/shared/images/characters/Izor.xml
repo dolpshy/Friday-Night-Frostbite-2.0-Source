@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="iceman.png"><SubTexture name="iceman down0000" x="3490" y="1622" width="750" height="800" frameX="-289" frameY="-490" frameWidth="2318" frameHeight="1405" />
+<SubTexture name="iceman down0001" x="2726" y="1628" width="750" height="798" frameX="-289" frameY="-492" frameWidth="2318" frameHeight="1405" />
+<SubTexture name="iceman down0002" x="0" y="3362" width="750" height="797" frameX="-289" frameY="-493" frameWidth="2318" frameHeight="1405" />
+<SubTexture name="iceman down0003" x="3490" y="2422" width="750" height="800" frameX="-289" frameY="-490" frameWidth="2318" frameHeight="1405" />
+<SubTexture name="iceman idle0000" x="675" y="863" width="700" height="837" frameX="-328" frameY="-471" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman idle0001" x="2025" y="837" width="700" height="836" frameX="-328" frameY="-472" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman idle0002" x="699" y="1715" width="701" height="830" frameX="-330" frameY="-478" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman idle0003" x="1400" y="1715" width="698" height="827" frameX="-330" frameY="-481" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman idle0004" x="0" y="1715" width="699" height="832" frameX="-329" frameY="-476" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman idle0005" x="2025" y="0" width="701" height="837" frameX="-327" frameY="-471" frameWidth="2344" frameHeight="1451" />
+<SubTexture name="iceman left0000" x="0" y="2547" width="980" height="815" frameX="-92" frameY="-495" frameWidth="2377" frameHeight="1410" />
+<SubTexture name="iceman left0001" x="3490" y="0" width="998" height="813" frameX="-74" frameY="-497" frameWidth="2377" frameHeight="1410" />
+<SubTexture name="iceman left0002" x="1969" y="2547" width="1004" height="814" frameX="-68" frameY="-496" frameWidth="2377" frameHeight="1410" />
+<SubTexture name="iceman left0003" x="980" y="2547" width="989" height="815" frameX="-83" frameY="-495" frameWidth="2377" frameHeight="1410" />
+<SubTexture name="iceman left0004" x="0" y="2547" width="980" height="815" frameX="-92" frameY="-495" frameWidth="2377" frameHeight="1410" />
+<SubTexture name="iceman right0000" x="2726" y="815" width="763" height="813" frameX="-338" frameY="-492" frameWidth="2342" frameHeight="1416" />
+<SubTexture name="iceman right0001" x="2726" y="0" width="764" height="815" frameX="-333" frameY="-490" frameWidth="2342" frameHeight="1416" />
+<SubTexture name="iceman right0002" x="2726" y="0" width="764" height="815" frameX="-333" frameY="-490" frameWidth="2342" frameHeight="1416" />
+<SubTexture name="iceman right0003" x="3490" y="813" width="759" height="809" frameX="-346" frameY="-495" frameWidth="2342" frameHeight="1416" />
+<SubTexture name="iceman up0000" x="1350" y="0" width="675" height="852" frameX="-364" frameY="-457" frameWidth="2286" frameHeight="1403" />
+<SubTexture name="iceman up0001" x="0" y="0" width="675" height="863" frameX="-364" frameY="-448" frameWidth="2286" frameHeight="1403" />
+<SubTexture name="iceman up0002" x="675" y="0" width="675" height="858" frameX="-364" frameY="-451" frameWidth="2286" frameHeight="1403" />
+<SubTexture name="iceman up0003" x="0" y="863" width="675" height="852" frameX="-364" frameY="-457" frameWidth="2286" frameHeight="1403" />
+</TextureAtlas>

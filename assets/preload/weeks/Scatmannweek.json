@@ -1,0 +1,40 @@
+{
+	"songs": [
+		[
+			"Scatmann",
+			"dickpot",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Scatmann-2",
+			"dickpot",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "NORMAL, HARD",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "scatmann week",
+	"weekName": "scatmann",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"startUnlocked": true
+}

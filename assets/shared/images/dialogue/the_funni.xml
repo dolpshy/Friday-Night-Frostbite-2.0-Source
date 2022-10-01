@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="the funni.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ANGY0000" x="0" y="0" width="434" height="473"/>
+	<SubTexture name="EVIL0000" x="434" y="0" width="437" height="464"/>
+	<SubTexture name="bruh0000" x="0" y="473" width="437" height="466"/>
+	<SubTexture name="talking0000" x="437" y="473" width="462" height="476"/>
+</TextureAtlas>

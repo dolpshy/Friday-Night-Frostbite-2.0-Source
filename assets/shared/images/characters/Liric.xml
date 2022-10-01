@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Liric.png"><SubTexture name="Liric down0000" x="7568" y="1464" width="1892" height="1461" frameX="-117" frameY="-477" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0001" x="7568" y="1464" width="1892" height="1461" frameX="-117" frameY="-477" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0002" x="7568" y="0" width="1892" height="1464" frameX="-117" frameY="-474" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0003" x="7568" y="0" width="1892" height="1464" frameX="-117" frameY="-474" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0004" x="3784" y="5985" width="1892" height="1467" frameX="-117" frameY="-471" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0005" x="3784" y="5985" width="1892" height="1467" frameX="-117" frameY="-471" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0006" x="5676" y="5985" width="1892" height="1467" frameX="-117" frameY="-471" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric down0007" x="5676" y="5985" width="1892" height="1467" frameX="-117" frameY="-471" frameWidth="2009" frameHeight="1938" />
+<SubTexture name="Liric idle0000" x="1892" y="5985" width="1892" height="1483" frameX="-117" frameY="-473" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0001" x="1892" y="5985" width="1892" height="1483" frameX="-117" frameY="-473" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0002" x="0" y="5985" width="1892" height="1486" frameX="-117" frameY="-470" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0003" x="0" y="5985" width="1892" height="1486" frameX="-117" frameY="-470" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0004" x="3784" y="0" width="1892" height="1490" frameX="-117" frameY="-466" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0005" x="3784" y="0" width="1892" height="1490" frameX="-117" frameY="-466" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0006" x="3784" y="1490" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0007" x="3784" y="1490" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0008" x="5676" y="1489" width="1892" height="1488" frameX="-117" frameY="-468" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0009" x="5676" y="1489" width="1892" height="1488" frameX="-117" frameY="-468" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0010" x="5676" y="1489" width="1892" height="1488" frameX="-117" frameY="-468" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric idle0011" x="5676" y="1489" width="1892" height="1488" frameX="-117" frameY="-468" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric left0000" x="0" y="3008" width="1892" height="1489" frameX="-98" frameY="-467" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0001" x="0" y="3008" width="1892" height="1489" frameX="-98" frameY="-467" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0002" x="5676" y="2977" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0003" x="0" y="4497" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0004" x="1892" y="4497" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0005" x="1892" y="4497" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0006" x="3784" y="4497" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric left0007" x="3784" y="4497" width="1892" height="1488" frameX="-98" frameY="-468" frameWidth="1990" frameHeight="1956" />
+<SubTexture name="Liric right0000" x="5676" y="4497" width="1892" height="1487" frameX="-117" frameY="-469" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0001" x="5676" y="4497" width="1892" height="1487" frameX="-117" frameY="-469" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0002" x="1892" y="3008" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0003" x="1892" y="3008" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0004" x="3784" y="3008" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0005" x="3784" y="3008" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0006" x="5676" y="0" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric right0007" x="5676" y="0" width="1892" height="1489" frameX="-117" frameY="-467" frameWidth="2009" frameHeight="1956" />
+<SubTexture name="Liric up0000" x="0" y="0" width="1892" height="1511" frameX="-102" frameY="-459" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0001" x="0" y="0" width="1892" height="1511" frameX="-102" frameY="-459" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0002" x="1892" y="0" width="1892" height="1500" frameX="-102" frameY="-470" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0003" x="1892" y="0" width="1892" height="1500" frameX="-102" frameY="-470" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0004" x="0" y="1511" width="1892" height="1497" frameX="-102" frameY="-473" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0005" x="0" y="1511" width="1892" height="1497" frameX="-102" frameY="-473" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0006" x="1892" y="1511" width="1892" height="1497" frameX="-102" frameY="-473" frameWidth="1994" frameHeight="1970" />
+<SubTexture name="Liric up0007" x="1892" y="1511" width="1892" height="1497" frameX="-102" frameY="-473" frameWidth="1994" frameHeight="1970" />
+</TextureAtlas>
