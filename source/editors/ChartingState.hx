@@ -68,8 +68,10 @@ class ChartingState extends MusicBeatState
 		'No Animation',
 		'Bullet_Note'
 	];
+	public var huhhuh:Bool = false;
 	private var noteTypeIntMap:Map<Int, String> = new Map<Int, String>();
 	private var noteTypeMap:Map<String, Null<Int>> = new Map<String, Null<Int>>();
+	public var isErect:Bool = PlayState.SONG.isErect;
 	public var ignoreWarnings = false;
 	var undos = [];
 	var redos = [];
@@ -85,7 +87,8 @@ class ChartingState extends MusicBeatState
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
-		['Set Property', "Value 1: Variable name\nValue 2: New value"]
+		['Set Property', "Value 1: Variable name\nValue 2: New value"],
+		['Lyrics', "Lyrics!!!\nValue 1: Text and optionally, colour\n(To specify colour, seperate it by a --)\nValue 2: Duration in seconds.\nDuration defaults to text length multiplied by 0.5"]
 	];
 
 	var _file:FileReference;
@@ -209,6 +212,7 @@ class ChartingState extends MusicBeatState
 				events: [],
 				bpm: 150.0,
 				needsVoices: true,
+				isErect: false,
 				arrowSkin: '',
 				splashSkin: 'noteSplashes',//idk it would crash if i didn't
 				player1: 'bf',
@@ -407,6 +411,14 @@ class ChartingState extends MusicBeatState
 			//trace('CHECKED!');
 		};
 
+		var check_isErect = new FlxUICheckBox(10, 42, null, null, "Erect Song", 100);
+		check_isErect.checked = _song.isErect;
+		check_isErect.callback = function()
+		{
+			_song.isErect = check_isErect.checked;
+			MusicBeatState.resetState();
+		};
+
 		var saveButton:FlxButton = new FlxButton(110, 8, "Save", function()
 		{
 			saveLevel();
@@ -600,6 +612,7 @@ class ChartingState extends MusicBeatState
 		tab_group_song.add(UI_songTitle);
 
 		tab_group_song.add(check_voices);
+		tab_group_song.add(check_isErect);
 		tab_group_song.add(clear_events);
 		tab_group_song.add(clear_notes);
 		tab_group_song.add(saveButton);
@@ -1336,7 +1349,11 @@ class ChartingState extends MusicBeatState
 			// vocals.stop();
 		}
 
-		var file:Dynamic = Paths.voices(currentSongName);
+		var file:Dynamic;
+		if (huhhuh)
+			file = Paths.voiceserect(currentSongName);
+		else
+			file = Paths.voices(currentSongName);
 		vocals = new FlxSound();
 		if (Std.isOfType(file, Sound) || OpenFlAssets.exists(file)) {
 			vocals.loadEmbedded(file);
@@ -1349,7 +1366,10 @@ class ChartingState extends MusicBeatState
 	}
 
 	function generateSong() {
-		FlxG.sound.playMusic(Paths.inst(currentSongName), 0.6/*, false*/);
+		if (huhhuh)
+			FlxG.sound.playMusic(Paths.insterect(currentSongName), 0.6);
+		else
+			FlxG.sound.playMusic(Paths.inst(currentSongName), 0.6);
 		if (instVolume != null) FlxG.sound.music.volume = instVolume.value;
 		if (check_mute_inst != null && check_mute_inst.checked) FlxG.sound.music.volume = 0;
 
@@ -2001,10 +2021,13 @@ class ChartingState extends MusicBeatState
 			var lastMetroStep:Int = Math.floor(((lastConductorPos + metronomeOffsetStepper.value) / metroInterval) / 1000);
 			if(metroStep != lastMetroStep) {
 				FlxG.sound.play(Paths.sound('Metronome_Tick'));
-				//trace('Ticked');
 			}
 		}
 		lastConductorPos = Conductor.songPosition;
+		
+		// Erect song!!!
+		if (check_isErect.checked)
+			huhhuh = true;
 		super.update(elapsed);
 	}
 

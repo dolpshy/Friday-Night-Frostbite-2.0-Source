@@ -1793,7 +1793,7 @@ class PlayState extends MusicBeatState
 				case 'Sussy Balls':
 					texti = File.getContent((Paths.json("sussy-balls/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("sussy-balls/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json(("sussy-balls/credits"))).split("UPY")[2];
+					upY = File.getContent((Paths.json("sussy-balls/credits"))).split("UPY")[2];
 				case 'Rayed Out':
 					//texti = File.getContent((Paths.json("rayed-out/credits"))).split("TIME")[0];
 					//size = File.getContent((Paths.json("rayed-out/credits"))).split("SIZE")[1];
@@ -1833,7 +1833,7 @@ class PlayState extends MusicBeatState
 			creditsTxt.updateHitbox();
 			creditsTxt.screenCenter(X);
 			creditsTxt.x -= 1000;
-			creditsTxt.y -= upY;
+			creditsTxt.y -= Std.parseInt(upY);
 			creditsText.add(creditsTxt);
 			add(creditsText);
 
@@ -1852,7 +1852,7 @@ class PlayState extends MusicBeatState
 
 		previousFrameTime = FlxG.game.ticks;
 		lastReportedPlayheadPosition = 0;
-		if (CoolUtil.difficultyString() != 'ERECT')
+		if (!SONG.isErect)
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 		else
 			FlxG.sound.playMusic(Paths.insterect(PlayState.SONG.song), 1, false);
@@ -1908,7 +1908,7 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (SONG.needsVoices)
-			if (CoolUtil.difficultyString() != 'ERECT')
+			if (!SONG.isErect)
 				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 			else
 				vocals = new FlxSound().loadEmbedded(Paths.voiceserect(PlayState.SONG.song));
@@ -2294,6 +2294,9 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		if (CoolUtil.difficultyString() == "ERECT")
+			SONG.isErect = true;
+
 		callOnLuas('onUpdate', [elapsed]);
 
 		if(!inCutscene) {
@@ -2977,6 +2980,19 @@ class PlayState extends MusicBeatState
 				} else {
 					FunkinLua.setVarInArray(this, value1, value2);
 				}
+			case 'Lyrics':
+				var split = value1.split("--");
+				var text = value1;
+				var color = FlxColor.WHITE;
+				if(split.length > 1){
+					text = split[0];
+					color = FlxColor.fromString(split[1]);
+				}
+				var duration:Float = Std.parseFloat(value2);
+				if (Math.isNaN(duration) || duration <= 0)
+					duration = text.length * 0.5;
+
+				writeLyrics(text, duration, color);
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -3039,6 +3055,44 @@ class PlayState extends MusicBeatState
 					}
 				});
 			}
+		}
+	}
+
+	var lyricText:FlxText;
+	var lyricTween:FlxTween;
+	function writeLyrics(text:String, duration:Float, color:FlxColor) {
+		if(lyricText!=null) {
+			var old:FlxText = cast lyricText;
+			FlxTween.tween(old, {alpha: 0}, 0.2, {onComplete: function(twn:FlxTween)
+			{
+				remove(old);
+				old.destroy();
+			}});
+			lyricText=null;
+		}
+
+		if(lyricTween!=null) {
+			lyricTween.cancel();
+			lyricTween = null;
+		}
+
+		if(text.trim()!='' && duration > 0 && color.alphaFloat > 0){
+			lyricText = new FlxText(0, 0, FlxG.width, text);
+			lyricText.setFormat(Paths.font("PressStart2P.ttf"), 24, color, CENTER, OUTLINE, FlxColor.BLACK);
+			lyricText.alpha = 0;
+			lyricText.screenCenter(XY);
+			lyricText.y += 250;
+			lyricText.cameras = [camOther];
+			add(lyricText);
+
+			lyricTween = FlxTween.tween(lyricText, {alpha: color.alphaFloat}, 0.2, {onComplete: function(twn:FlxTween) {
+				lyricTween = FlxTween.tween(lyricText, {alpha: 0}, 0.2, {startDelay: duration, onComplete: function(twn:FlxTween) {
+					remove(lyricText);
+					lyricText.destroy();
+					lyricText = null;
+					if(lyricTween == twn) lyricTween = null;
+				}});
+			}});
 		}
 	}
 
@@ -3175,13 +3229,13 @@ class PlayState extends MusicBeatState
 				#end
 			}
 
+			FlxG.camera.bgColor = 0xFF000000;
+
 			if (chartingMode)
 			{
 				openChartEditor();
 				return;
 			}
-
-			FlxG.camera.bgColor = 0xFF000000;
 
 			if (isStoryMode)
 			{
