@@ -1666,15 +1666,15 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "gf",
-		"gfVersion": "gf",
+		"player2": "where-she-go",
+		"gfVersion": "where-she-go",
 		"events": [],
 		"player3": null,
 		"song": "Scatmann",
 		"needsVoices": false,
 		"sections": 0,
 		"validScore": true,
-		"stage": "stage",
+		"stage": "scatmann",
 		"bpm": 130,
 		"speed": 2.6
 	}

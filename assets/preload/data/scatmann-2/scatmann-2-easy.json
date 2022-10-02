@@ -3,7 +3,7 @@
 		"speed": 2.6,
 		"stage": "stage",
 		"player1": "smugpot",
-		"player2": "gf",
+		"player2": "where-she-go",
 		"events": [],
 		"notes": [
 			{
@@ -2951,7 +2951,7 @@
 		],
 		"splashSkin": "noteSplashes",
 		"validScore": false,
-		"gfVersion": "gf",
+		"gfVersion": "where-she-go",
 		"bpm": 150,
 		"arrowSkin": "",
 		"needsVoices": true,
