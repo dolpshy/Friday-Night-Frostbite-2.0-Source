@@ -63,9 +63,8 @@ class MainMenuState extends MusicBeatState
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
 
 		camGame = new FlxCamera();
-
 		FlxG.cameras.reset(camGame);
-		FlxCamera.defaultCameras = [camGame];
+		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
@@ -254,7 +253,7 @@ class MainMenuState extends MusicBeatState
 								case 'sound_test':
 									MusicBeatState.switchState(new SoundTestMenuState());
 								case 'options':
-									MusicBeatState.switchState(new options.OptionsState());
+									LoadingState.loadAndSwitchState(new options.OptionsState());
 							}
 						});
 					}

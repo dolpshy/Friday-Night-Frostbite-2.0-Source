@@ -73,8 +73,8 @@ class GameOverSubstate extends MusicBeatSubstate
 		super();
 
 		var huh:Int = FlxG.random.int(1, 16);
-		quoteText = new FlxText(0, 0, 625, '', 45);
-		quoteText.setFormat(Paths.font("SansUndertale.ttf"), 45, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		quoteText = new FlxText(0, 0, 625, '', 40);
+		quoteText.setFormat(Paths.font("SansUndertale.ttf"), 40, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
 		switch(huh)	{ // IM SO FUCKIN STUPID AND I DONT KNOW HOW TO DO IT AUTOMATICLY 
 			case 1:
@@ -126,7 +126,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 
 		quoteText.y = camFollow.y;
-		quoteText.y += 200;
+		quoteText.y += 150;
 		quoteText.screenCenter(X);
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
