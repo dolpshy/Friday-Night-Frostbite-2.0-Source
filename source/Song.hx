@@ -19,6 +19,7 @@ typedef SwagSong =
 	var events:Array<Dynamic>;
 	var bpm:Float;
 	var needsVoices:Bool;
+	var isErect:Bool;
 	var speed:Float;
 
 	var player1:String;
