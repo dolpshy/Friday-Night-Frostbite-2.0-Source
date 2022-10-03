@@ -88,6 +88,10 @@ class ChartingState extends MusicBeatState
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
+		['Player Note Visible', "Value 1: True or False"],
+		['Opponent Note Visible', "Value 1: True or False"],
+		['Change To Middle Scroll', "Value 1: True or False"],
+		['Cinematic Bars', "Value 1: True or False"],
 		['Lyrics', "Lyrics!!!\nValue 1: Text and optionally, colour\n(To specify colour, seperate it by a --)\nValue 2: Duration in seconds.\nDuration defaults to text length multiplied by 0.5"]
 	];
 
@@ -200,6 +204,10 @@ class ChartingState extends MusicBeatState
 	public var mouseQuant:Bool = false;
 	override function create()
 	{
+		// Erect song!!!
+		if (check_isErect != null && check_isErect.checked)
+			huhhuh = true;
+		
 		if (PlayState.SONG != null)
 			_song = PlayState.SONG;
 		else
@@ -388,6 +396,7 @@ class ChartingState extends MusicBeatState
 		super.create();
 	}
 
+	public var check_isErect:FlxUICheckBox = null;
 	var check_mute_inst:FlxUICheckBox = null;
 	var check_vortex:FlxUICheckBox = null;
 	var check_warnings:FlxUICheckBox = null;
@@ -1832,9 +1841,7 @@ class ChartingState extends MusicBeatState
 				style = 3;
 			}
 
-			var conductorTime = Conductor.songPosition; //+ sectionStartTime();Conductor.songPosition / Conductor.stepCrochet;
-
-			//AWW YOU MADE IT SEXY <3333 THX SHADMAR
+			var conductorTime = Conductor.songPosition;
 
 			if(!blockInput){
 				if(FlxG.keys.justPressed.RIGHT){
@@ -2025,9 +2032,6 @@ class ChartingState extends MusicBeatState
 		}
 		lastConductorPos = Conductor.songPosition;
 		
-		// Erect song!!!
-		if (check_isErect.checked)
-			huhhuh = true;
 		super.update(elapsed);
 	}
 
@@ -2038,47 +2042,6 @@ class ChartingState extends MusicBeatState
 		zoomTxt.text = 'Zoom: ' + zoomThing;
 		reloadGridLayer();
 	}
-
-	/*
-	function loadAudioBuffer() {
-		if(audioBuffers[0] != null) {
-			audioBuffers[0].dispose();
-		}
-		audioBuffers[0] = null;
-		#if MODS_ALLOWED
-		if(FileSystem.exists(Paths.modFolders('songs/' + currentSongName + '/Inst.ogg'))) {
-			audioBuffers[0] = AudioBuffer.fromFile(Paths.modFolders('songs/' + currentSongName + '/Inst.ogg'));
-			//trace('Custom vocals found');
-		}
-		else { #end
-			var leVocals:String = Paths.getPath(currentSongName + '/Inst.' + Paths.SOUND_EXT, SOUND, 'songs');
-			if (OpenFlAssets.exists(leVocals)) { //Vanilla inst
-				audioBuffers[0] = AudioBuffer.fromFile('./' + leVocals.substr(6));
-				//trace('Inst found');
-			}
-		#if MODS_ALLOWED
-		}
-		#end
-
-		if(audioBuffers[1] != null) {
-			audioBuffers[1].dispose();
-		}
-		audioBuffers[1] = null;
-		#if MODS_ALLOWED
-		if(FileSystem.exists(Paths.modFolders('songs/' + currentSongName + '/Voices.ogg'))) {
-			audioBuffers[1] = AudioBuffer.fromFile(Paths.modFolders('songs/' + currentSongName + '/Voices.ogg'));
-			//trace('Custom vocals found');
-		} else { #end
-			var leVocals:String = Paths.getPath(currentSongName + '/Voices.' + Paths.SOUND_EXT, SOUND, 'songs');
-			if (OpenFlAssets.exists(leVocals)) { //Vanilla voices
-				audioBuffers[1] = AudioBuffer.fromFile('./' + leVocals.substr(6));
-				//trace('Voices found, LETS FUCKING GOOOO');
-			}
-		#if MODS_ALLOWED
-		}
-		#end
-	}
-	*/
 
 	var lastSecBeats:Float = 0;
 	var lastSecBeatsNext:Float = 0;

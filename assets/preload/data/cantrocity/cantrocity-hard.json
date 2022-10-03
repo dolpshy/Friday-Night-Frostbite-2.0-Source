@@ -7149,14 +7149,64 @@
 				"bpm": 190
 			},
 			{
-				"gfSection": false,
-				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
-				"bpm": 190,
 				"sectionBeats": 4,
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 190,
 				"changeBPM": false,
 				"mustHitSection": true
+			},
+			{
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 190,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 190,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"sectionBeats": 4,
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 190,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 190
+			},
+			{
+				"sectionBeats": 4,
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 190
 			},
 			{
 				"gfSection": false,
@@ -7189,7 +7239,7 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gf",
+		"gfVersion": "where-she-go",
 		"events": [
 			[
 				0,
@@ -7198,6 +7248,26 @@
 						"Play Animation",
 						"voiceline1",
 						"bf"
+					]
+				]
+			],
+			[
+				236.842105263158,
+				[
+					[
+						"Cinematic Bars",
+						"true",
+						""
+					],
+					[
+						"Opponent Note Visible",
+						"false",
+						""
+					],
+					[
+						"Player Note Visible",
+						"false",
+						""
 					]
 				]
 			],
@@ -7572,6 +7642,36 @@
 				]
 			],
 			[
+				10105.2631578947,
+				[
+					[
+						"Player Note Visible",
+						"true",
+						""
+					],
+					[
+						"Opponent Note Visible",
+						"true",
+						""
+					],
+					[
+						"Cinematic Bars",
+						"false",
+						""
+					]
+				]
+			],
+			[
+				119763.157894737,
+				[
+					[
+						"Lyrics",
+						"Beh, Watch This!",
+						"1.5"
+					]
+				]
+			],
+			[
 				123000,
 				[
 					[
@@ -7662,6 +7762,16 @@
 					[
 						"zoom out",
 						"0.9",
+						""
+					]
+				]
+			],
+			[
+				130500,
+				[
+					[
+						"Lyrics",
+						"SHUT THE F%#@ UP!",
 						""
 					]
 				]
@@ -7767,31 +7877,76 @@
 				]
 			],
 			[
-				148657.894736842,
+				144000,
 				[
 					[
-						"zoom out",
-						"0.3",
+						"Cinematic Bars",
+						"true",
+						""
+					],
+					[
+						"Lyrics",
+						"I think i forgor about something..",
+						"2.3"
+					]
+				]
+			],
+			[
+				146368.421052632,
+				[
+					[
+						"Lyrics",
+						"What is it?",
 						""
 					]
 				]
 			],
 			[
-				150947.368421053,
+				146842.105263158,
 				[
 					[
-						"zoom out",
-						"0.2",
+						"Lyrics",
+						"Your brain?",
 						""
 					]
 				]
 			],
 			[
-				151105.263157895,
+				148184.210526316,
 				[
 					[
-						"zoom out",
-						"0.1",
+						"Lyrics",
+						"Nah",
+						"1"
+					]
+				]
+			],
+			[
+				148500,
+				[
+					[
+						"Lyrics",
+						"I think here's actually a child...",
+						"1.5"
+					]
+				]
+			],
+			[
+				150000,
+				[
+					[
+						"Lyrics",
+						"...that escape from my sexst-.. uhmm",
+						"1.5"
+					]
+				]
+			],
+			[
+				151578.947368421,
+				[
+					[
+						"Lyrics",
+						"...aaee... Basement.",
 						""
 					]
 				]
