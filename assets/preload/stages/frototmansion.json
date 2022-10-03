@@ -1,8 +1,6 @@
 {
 	"directory": "",
 	"defaultZoom": 0.4,
-	"isPixelStage": false,
-	"hide_girlfriend": true,
 
 	"boyfriend": [1400, 810],
 	"girlfriend": [200, -3000],
