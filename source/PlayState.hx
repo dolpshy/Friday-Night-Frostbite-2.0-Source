@@ -357,6 +357,9 @@ class PlayState extends MusicBeatState
 	// bullet
 	public static var hpmechanic = false;
 
+	// for event
+	public var stageData:StageFile;
+
 	override public function create()
 	{
 		textthingies = new FlxText(0, 1000, 625, '');
@@ -564,7 +567,7 @@ class PlayState extends MusicBeatState
 		else
 			curStage = SONG.stage;
 
-		var stageData:StageFile = StageData.getStageFile(curStage);
+		stageData = StageData.getStageFile(curStage);
 		if(stageData == null) { //Stage couldn't be found, create a dummy stage for preventing a crash
 			stageData = {
 				directory: "",
@@ -1010,6 +1013,7 @@ class PlayState extends MusicBeatState
 		healthBorder.screenCenter(X);
 		healthBorder.scrollFactor.set();
 		healthBorder.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
+		healthBorder.alpha = ClientPrefs.healthBarAlpha;
 		healthBorder.xAdd = 6;
 		healthBorder.yAdd = -28;
 		add(healthBorder);
@@ -1020,12 +1024,13 @@ class PlayState extends MusicBeatState
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
+		healthBarBG.alpha = ClientPrefs.healthBarAlpha;
 		healthBarBG.xAdd = 56;
 		healthBarBG.yAdd = -4;
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x + 234, healthBarBG.y + 4, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+		healthBar = new FlxBar(healthBarBG.x + 280, healthBarBG.y + 4, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		healthBar.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
@@ -2993,7 +2998,10 @@ class PlayState extends MusicBeatState
 
 			// NEW EVENTS STARTS HERE!!!!
 			case 'Change Default CamZoom':
-				defaultCamZoom = value1;
+				if (Std.parseFloat(value1) <= 0)
+					defaultCamZoom = stageData.defaultZoom;
+				else
+					defaultCamZoom = Std.parseFloat(value1);
 			case 'Change To Middle Scroll':
 				if (value1 != 'true' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {

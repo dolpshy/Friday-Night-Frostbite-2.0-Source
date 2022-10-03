@@ -61,12 +61,11 @@ class ClientPrefs {
 	public static var opponentNotesCanKill:Bool = false;
 	public static var stunsBlockInputs:Float = 0;
 	public static var cameraMoveIntensity:Float = 70;
-	public static var missShakeIntensity:Float = 0.5;
+	public static var missShakeIntensity:Float = 0.2;
 	public static var scoreSystem:String = 'Vanilla';
 	public static var accuracySystem:String = 'Psych';
 	public static var missAnimsSounds:Bool = true;
 	public static var advancedScoreTxt:Bool = true;
-	public static var scoreTxtUnderlayOpacity:Float = 0.3;
 	public static var healthBarType:String = 'Horizontal';
 	public static var hideAllSprites:Bool = false;
 	public static var hideOpponent:Bool = false;
@@ -163,8 +162,6 @@ class ClientPrefs {
 		FlxG.save.data.scoreSystem = scoreSystem;
 		FlxG.save.data.accuracySystem = accuracySystem;
 		FlxG.save.data.missAnimsSounds = missAnimsSounds;
-		FlxG.save.data.advancedScoreTxt = advancedScoreTxt;
-		FlxG.save.data.scoreTxtUnderlayOpacity = scoreTxtUnderlayOpacity;
 		FlxG.save.data.healthBarType = healthBarType;
 		FlxG.save.data.hideAllSprites = hideAllSprites;
 		FlxG.save.data.hideOpponent = hideOpponent;
@@ -229,12 +226,6 @@ class ClientPrefs {
 				FlxG.updateFramerate = framerate;
 			}
 		}
-		/*if(FlxG.save.data.cursing != null) {
-			cursing = FlxG.save.data.cursing;
-		}
-		if(FlxG.save.data.violence != null) {
-			violence = FlxG.save.data.violence;
-		}*/
 		if(FlxG.save.data.camZooms != null) {
 			camZooms = FlxG.save.data.camZooms;
 		}
@@ -265,7 +256,6 @@ class ClientPrefs {
 		if(FlxG.save.data.comboOffset != null) {
 			comboOffset = FlxG.save.data.comboOffset;
 		}
-		
 		if(FlxG.save.data.ratingOffset != null) {
 			ratingOffset = FlxG.save.data.ratingOffset;
 		}
@@ -333,12 +323,6 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.missAnimsSounds != null) {
 			missAnimsSounds = FlxG.save.data.missAnimsSounds;
-		}
-		if(FlxG.save.data.advancedScoreTxt != null) {
-			advancedScoreTxt = FlxG.save.data.advancedScoreTxt;
-		}
-		if(FlxG.save.data.scoreTxtUnderlayOpacity != null) {
-			scoreTxtUnderlayOpacity = FlxG.save.data.scoreTxtUnderlayOpacity;
 		}
 		if(FlxG.save.data.healthBarType != null) {
 			healthBarType = FlxG.save.data.healthBarType;
@@ -411,7 +395,7 @@ class ClientPrefs {
 	}
 
 	inline public static function getGameplaySetting(name:String, defaultValue:Dynamic):Dynamic {
-		return /*PlayState.isStoryMode ? defaultValue : */ (gameplaySettings.exists(name) ? gameplaySettings.get(name) : defaultValue);
+		return (gameplaySettings.exists(name) ? gameplaySettings.get(name) : defaultValue);
 	}
 
 	public static function reloadControls() {
