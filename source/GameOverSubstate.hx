@@ -71,6 +71,8 @@ class GameOverSubstate extends MusicBeatSubstate
 	public function new(x:Float, y:Float, camX:Float, camY:Float)
 	{
 		super();
+		
+		FlxG.camera.bgColor = 0xFF000000;
 
 		var huh:Int = FlxG.random.int(1, 16);
 		quoteText = new FlxText(0, 0, 625, '', 40);
@@ -193,11 +195,13 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.seenCutscene = false;
 
 			WeekData.loadTheFirstEnabledMod();
-			if (PlayState.isStoryMode)
+			if (PlayState.isStoryMode) {
 				MusicBeatState.switchState(new StoryMenuState());
-			else if (PlayState.isCodes)
+				PlayState.isStoryMode = false;
+			} else if (PlayState.isCodes) {
 				MusicBeatState.switchState(new SoundTestMenuState());
-			else
+				PlayState.isCodes = false;
+			} else
 				MusicBeatState.switchState(new FreeplayState());
 
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));

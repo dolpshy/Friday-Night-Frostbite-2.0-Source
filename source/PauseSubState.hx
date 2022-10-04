@@ -29,7 +29,6 @@ class PauseSubState extends MusicBeatSubstate
 	var skipTimeText:FlxText;
 	var skipTimeTracker:Alphabet;
 	var curTime:Float = Math.max(0, Conductor.songPosition);
-	//var botplayText:FlxText;
 
 	public static var songName:String = '';
 
@@ -49,8 +48,6 @@ class PauseSubState extends MusicBeatSubstate
 				menuItemsOG.insert(3, 'Skip Time');
 			}
 			menuItemsOG.insert(3 + num, 'End Song');
-			menuItemsOG.insert(4 + num, 'Toggle Practice Mode');
-			menuItemsOG.insert(5 + num, 'Toggle Botplay');
 		}
 		menuItems = menuItemsOG;
 
@@ -256,8 +253,13 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.seenCutscene = false;
 
 					WeekData.loadTheFirstEnabledMod();
+					FlxG.camera.bgColor = 0xFF000000;
 					if(PlayState.isStoryMode) {
 						MusicBeatState.switchState(new StoryMenuState());
+						PlayState.isStoryMode = false;
+					} else if(PlayState.isCodes) {
+						MusicBeatState.switchState(new SoundTestMenuState());
+						PlayState.isCodes = false;
 					} else {
 						MusicBeatState.switchState(new FreeplayState());
 					}
@@ -287,6 +289,7 @@ class PauseSubState extends MusicBeatSubstate
 		FlxG.sound.music.volume = 0;
 		PlayState.instance.vocals.volume = 0;
 
+		FlxG.camera.bgColor = 0xFF000000;
 		if(noTrans)
 		{
 			FlxTransitionableState.skipNextTransOut = true;
