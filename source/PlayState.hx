@@ -1014,7 +1014,7 @@ class PlayState extends MusicBeatState
 		healthBorder.scrollFactor.set();
 		healthBorder.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
 		healthBorder.alpha = ClientPrefs.healthBarAlpha;
-		healthBorder.xAdd = 6;
+		healthBorder.xAdd = -30;
 		healthBorder.yAdd = -28;
 		add(healthBorder);
 		if(ClientPrefs.downScroll) healthBorder.y = 0.11 * FlxG.height;
@@ -1025,7 +1025,7 @@ class PlayState extends MusicBeatState
 		healthBarBG.scrollFactor.set();
 		healthBarBG.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
 		healthBarBG.alpha = ClientPrefs.healthBarAlpha;
-		healthBarBG.xAdd = 56;
+		healthBarBG.xAdd = 20;
 		healthBarBG.yAdd = -4;
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
@@ -1745,6 +1745,8 @@ class PlayState extends MusicBeatState
 
 	function startSong():Void
 	{
+		if (CoolUtil.difficultyString() == "ERECT")
+			SONG.isErect = true;
 		if (curSong == "Let Us In") //huh
 			health = maxHealth;
 		creditsText = new FlxTypedGroup<FlxText>();
@@ -1758,98 +1760,92 @@ class PlayState extends MusicBeatState
 
 			var texti:String;
 			var size:String;
-			var upY:String;
+			var high:String;
+
 			switch (curSong) {
 				case 'Astral Snowstorm':
 					if (CoolUtil.difficultyString() != 'ERECT') {
 						texti = File.getContent((Paths.json("astral-snowstorm/credits"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/credits"))).split("SIZE")[1];
-						upY = File.getContent((Paths.json("astral-snowstorm/credits"))).split("UPY")[2];
+						high = File.getContent((Paths.json("astral-snowstorm/credits"))).split("HIGH")[3];
 					} else {
 						texti = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("SIZE")[1];
-						upY = File.getContent((Paths.json("astral-snowstorm/crediterect"))).split("UPY")[2];
+						high = File.getContent((Paths.json("astral-snowstorm/crediterect"))).split("HIGH")[3];
 					}
 				case 'Big Shot':
 					texti = File.getContent((Paths.json("big-shot/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("big-shot/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("big-shot/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("big-shot/credits"))).split("HIGH")[3];
 				case 'Breath Catcher':
 					texti = File.getContent((Paths.json("breath-catcher/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("breath-catcher/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("breath-catcher/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("breath-catcher/credits"))).split("HIGH")[3];
 				case "Can't Break Free":
 					texti = File.getContent((Paths.json("can't-break-free/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("can't-break-free/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("can't-break-free/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("can't-break-free/credits"))).split("HIGH")[3];
 				case 'Cold Destiny':
 					texti = File.getContent((Paths.json("cold-destiny/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("cold-destiny/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("cold-destiny/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("cold-destiny/credits"))).split("HIGH")[3];
 				case 'Frozen System':
 					texti = File.getContent((Paths.json("frozen-system/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("frozen-system/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("frozen-system/credits"))).split("HIGH")[3];
 				case 'Frozen System Alt':
 					texti = File.getContent((Paths.json("frozen-system-alt/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system-alt/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("frozen-system-alt/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("frozen-system-alt/credits"))).split("HIGH")[3];
 				case 'Ice Cold Killer':
 					texti = File.getContent((Paths.json("ice-cold-killer/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("ice-cold-killer/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("ice-cold-killer/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("ice-cold-killer/credits"))).split("HIGH")[3];
 				case 'Let Us In':
 					texti = File.getContent((Paths.json("let-us-in/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("let-us-in/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("let-us-in/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("let-us-in/credits"))).split("HIGH")[3];
 				case 'Scatmann 2':
 					texti = File.getContent((Paths.json("scatmann-2/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("scatmann-2/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("scatmann-2/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("scatmann-2/credits"))).split("HIGH")[3];
 				case 'Sussy Balls':
 					texti = File.getContent((Paths.json("sussy-balls/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("sussy-balls/credits"))).split("SIZE")[1];
-					upY = File.getContent((Paths.json("sussy-balls/credits"))).split("UPY")[2];
+					high = File.getContent((Paths.json("sussy-balls/credits"))).split("HIGH")[3];
 				case 'Rayed Out':
-					//texti = File.getContent((Paths.json("rayed-out/credits"))).split("TIME")[0];
-					//size = File.getContent((Paths.json("rayed-out/credits"))).split("SIZE")[1];
-					//upY = File.getContent((Paths.json("rayed-out/credits"))).split("UPY")[2];
-					texti = "unfinished";
-					size = '24';
-					upY = '0';
+					texti = File.getContent((Paths.json("rayed-out/credits"))).split("TIME")[0];
+					size = File.getContent((Paths.json("rayed-out/credits"))).split("SIZE")[1];
+					high = File.getContent((Paths.json("rayed-out/credits"))).split("HIGH")[3];
 				case 'Top 10 Moments':
-					//texti = File.getContent((Paths.json("top-10-moments/credits"))).split("TIME")[0];
-					//size = File.getContent((Paths.json("top-10-moments/credits"))).split("SIZE")[1];
-					//upY = File.getContent((Paths.json("top-10-moments/credits"))).split("UPY")[2];
-					texti = "unfinished";
-					size = '24';
-					upY = '0';
+					texti = File.getContent((Paths.json("top-10-moments/credits"))).split("TIME")[0];
+					size = File.getContent((Paths.json("top-10-moments/credits"))).split("SIZE")[1];
+					high = File.getContent((Paths.json("top-10-moments/credits"))).split("HIGH")[3];
 				default:
 					if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "/credits"))) {
 						if (CoolUtil.difficultyString() != 'ERECT') {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("SIZE")[1];
-							upY = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("UPY")[2];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("HIGH")[3];
 						} else {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("SIZE")[1];
-							upY = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("UPY")[2];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("HIGH")[3];
 						}
 					} else {
 						texti = "unfinished";
 						size = '24';
-						upY = '0';
+						high = '75';
 					}
 			}
 
-			creditsTxt = new FlxText(0, 75, 0, texti, 28);
+			creditsTxt = new FlxText(0, Std.parseInt(high), 0, texti, 28);
 			creditsTxt.cameras = [camCREDITS];
 			creditsTxt.setFormat(Paths.font("pixel.otf"), Std.parseInt(size), FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			creditsTxt.setGraphicSize(Std.int(creditsTxt.width * 0.8));
 			creditsTxt.updateHitbox();
 			creditsTxt.screenCenter(X);
 			creditsTxt.x -= 1000;
-			creditsTxt.y -= Std.parseInt(upY);
 			creditsText.add(creditsTxt);
 			add(creditsText);
 
@@ -2307,9 +2303,6 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		if (CoolUtil.difficultyString() == "ERECT")
-			SONG.isErect = true;
-
 		callOnLuas('onUpdate', [elapsed]);
 
 		if(!inCutscene) {
@@ -2998,41 +2991,48 @@ class PlayState extends MusicBeatState
 
 			// NEW EVENTS STARTS HERE!!!!
 			case 'Change Default CamZoom':
-				if (Std.parseFloat(value1) <= 0)
+				var val1:Float = Std.parseFloat(value1);
+				if (val1 == 0)
 					defaultCamZoom = stageData.defaultZoom;
 				else
-					defaultCamZoom = Std.parseFloat(value1);
+					defaultCamZoom = val1;
 			case 'Change To Middle Scroll':
-				if (value1 != 'true' && !alreadyMS) {
+				if (value1 == 'true' && value1 != 'false' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {
-						playerStrums.forEach(function(spr:FlxSprite)
-						{
-							//spr.x += 308;
-							FlxTween.tween(spr, {x: STRUM_X_MIDDLESCROLL}, 0.1, {ease: FlxEase.sineOut});
-						});
+						FlxTween.tween(playerStrums.members[0], {x: 410}, 0.6, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.6, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.6, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.6, {ease: FlxEase.sineOut});
 					}
 					opponentStrums.forEach(function(spr:FlxSprite)
 					{
-						FlxTween.tween(spr, {alpha: 1}, 0.1, {ease: FlxEase.sineOut});
+						FlxTween.tween(spr, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
 					});
 					alreadyMS = true;
 				} else {
 					if (!ClientPrefs.middleScroll) {
 						playerStrums.forEach(function(spr:FlxSprite)
 						{
-							//spr.x -= 308;
-							FlxTween.tween(spr, {x: STRUM_X}, 0.1, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.1, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.1, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.1, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.1, {ease: FlxEase.sineOut});
+						});
+						opponentStrums.forEach(function(spr:FlxSprite)
+						{
+							FlxTween.tween(spr, {alpha: 1}, 0.6, {ease: FlxEase.sineIn});
+						});
+					} else {
+						opponentStrums.forEach(function(spr:FlxSprite)
+						{
+							FlxTween.tween(spr, {alpha: 0.35}, 0.6, {ease: FlxEase.sineIn});
 						});
 					}
-					opponentStrums.forEach(function(spr:FlxSprite)
-					{
-						FlxTween.tween(spr, {alpha: 0}, 0.2, {ease: FlxEase.sineIn});
-					});
 					alreadyMS = false;
 				}
 
 			case 'Player Note Visible':
-				if (value1 != 'true' && !alreadyPN) {
+				if (value1 != 'true' && value1 == 'false' && !alreadyPN) {
 					playerStrums.forEach(function(spr:FlxSprite)
 					{
 						FlxTween.tween(spr, {alpha: 0}, 0.5, {ease: FlxEase.sineOut});
@@ -3047,7 +3047,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Opponent Note Visible':
-				if (value1 != 'true' && !alreadyON) {
+				if (value1 != 'true' && value1 == 'false' && !alreadyON) {
 					opponentStrums.forEach(function(spr:FlxSprite)
 					{
 						FlxTween.tween(spr, {alpha: 0}, 0.5, {ease: FlxEase.sineOut});
@@ -3366,7 +3366,6 @@ class PlayState extends MusicBeatState
 					}
 					MusicBeatState.switchState(new StoryMenuState());
 
-					// if ()
 					if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {
 						StoryMenuState.weekCompleted.set(WeekData.weeksList[storyWeek], true);
 
@@ -3378,6 +3377,7 @@ class PlayState extends MusicBeatState
 						FlxG.save.data.weekCompleted = StoryMenuState.weekCompleted;
 						FlxG.save.flush();
 					}
+					isStoryMode = false;
 					changedDifficulty = false;
 				}
 				else
@@ -3409,6 +3409,7 @@ class PlayState extends MusicBeatState
 				}
 				MusicBeatState.switchState(new SoundTestMenuState());
 				changedDifficulty = false;
+				isCodes = false;
 			}
 			else
 			{
