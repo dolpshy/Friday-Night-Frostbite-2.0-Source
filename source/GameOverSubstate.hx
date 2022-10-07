@@ -74,6 +74,8 @@ class GameOverSubstate extends MusicBeatSubstate
 		
 		FlxG.camera.bgColor = 0xFF000000;
 
+		var curSong:String = PlayState.SONG.song;
+
 		var huh:Int = FlxG.random.int(1, 16);
 		quoteText = new FlxText(0, 0, 625, '', 40);
 		quoteText.setFormat(Paths.font("SansUndertale.ttf"), 40, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -120,7 +122,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend = new Boyfriend(x, y, characterName);
 		boyfriend.x += boyfriend.positionArray[0];
 		boyfriend.y += boyfriend.positionArray[1];
-		if (isStoryMode) {
+		if (PlayState.isStoryMode) {
 			var week:String = WeekData.getCurrentWeek().weekName;
 			if (week == 'The Interesting Sussy Sussy')
 				boyfriend.visible = false;
@@ -176,8 +178,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		add(new AchievementObject('skill_issue', camAchievement));
 		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 	}
-
-	PlayState.achievementBalls();
 	#end
 
 	override function update(elapsed:Float)

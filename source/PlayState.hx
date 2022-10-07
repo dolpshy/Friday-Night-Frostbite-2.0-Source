@@ -3425,7 +3425,7 @@ class PlayState extends MusicBeatState
 			endSong();
 		}
 	}
-	public static function achievementBalls() {
+	function achievementBalls() {
 		if(achievementObj != null) {
 			return;
 		} else {
