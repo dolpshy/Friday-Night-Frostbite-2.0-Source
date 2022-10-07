@@ -242,8 +242,8 @@ class PlayState extends MusicBeatState
 	public var oldPercentage:Float = 50;
 	public var combo:Int = 0;
 
-	private var healthBorder:AttachedSprite;
-	private var healthBarBG:AttachedSprite;
+	public var healthBorder:AttachedSprite;
+	public var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
 
@@ -422,6 +422,10 @@ class PlayState extends MusicBeatState
 				textthingies.text = myass[25];
 		} 
 		// TheReel REALLY SUCKS as coder
+		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
+		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
+		add(topBar);
+		add(bottomBar);
 
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
@@ -546,11 +550,6 @@ class PlayState extends MusicBeatState
 		{
 			detailsText = "Freeplay";
 		}
-
-		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
-		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-		add(topBar);
-		add(bottomBar);
 
 		// String for when the game is paused
 		detailsPausedText = "Paused - " + detailsText;
@@ -726,6 +725,8 @@ class PlayState extends MusicBeatState
 				add(winter);
 			case 'scatmann':
 				FlxG.camera.bgColor = 0xFFFFFFFF;
+			case 'bitch':
+				//lmao
 		}
 
 		add(gfGroup);
@@ -882,9 +883,7 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) timeTxt.y = FlxG.height - 44;
 
 		if(ClientPrefs.timeBarType == 'Song Name')
-		{
 			timeTxt.text = SONG.song;
-		}
 		updateTime = showTime;
 
 		timeBarBG = new AttachedSprite('timeBar');
@@ -913,8 +912,7 @@ class PlayState extends MusicBeatState
 		add(strumLineNotes);
 		add(grpNoteSplashes);
 
-		if(ClientPrefs.timeBarType == 'Song Name')
-		{
+		if(ClientPrefs.timeBarType == 'Song Name'){
 			timeTxt.size = 24;
 			timeTxt.y += 3;
 		}
@@ -1018,19 +1016,18 @@ class PlayState extends MusicBeatState
 		healthBorder.yAdd = -28;
 		add(healthBorder);
 		if(ClientPrefs.downScroll) healthBorder.y = 0.11 * FlxG.height;
-		
+				
 		healthBarBG = new AttachedSprite('healthBar');
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
-		healthBarBG.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
-		healthBarBG.alpha = ClientPrefs.healthBarAlpha;
+		healthBarBG.visible = false;
 		healthBarBG.xAdd = 20;
 		healthBarBG.yAdd = -4;
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x + 280, healthBarBG.y + 4, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+		healthBar = new FlxBar(healthBarBG.x-4, healthBarBG.y-2, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width+16), Std.int(healthBarBG.height+16), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		healthBar.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
@@ -1105,7 +1102,6 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
-		healthBarBG.cameras = [camHUD];
 		healthBorder.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
@@ -1161,9 +1157,9 @@ class PlayState extends MusicBeatState
 		if (isStoryMode && !seenCutscene)
 		{
 			switch (daSong) {
-				case 'chilly' | 'astral snowstorm' | 'blizzard' | 'cold-destiny' | 'swift' | 'iceberg':
+				case 'Chilly' | 'Astral Snowstorm' | 'Blizzard' | 'Cold Destiny' | 'Swift' | 'Iceberg':
 					startDialogue(dialogueJson);
-				case 'cantrocity':
+				case 'Cantrocity':
 					startVideo('real');
 				default:
 					startCountdown();
@@ -1257,12 +1253,9 @@ class PlayState extends MusicBeatState
 	}
 
 	public function reloadHealthBarColors() {
-		if (!opponentPlay)
-		healthBar.createFilledBar(FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]),
-			FlxColor.fromRGB(boyfriend.healthColorArray[0], boyfriend.healthColorArray[1], boyfriend.healthColorArray[2]));
-
-		else healthBar.createFilledBar(FlxColor.fromRGB(boyfriend.healthColorArray[0], boyfriend.healthColorArray[1], boyfriend.healthColorArray[2]),
-			FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]));
+		// im stupid again
+		if (!opponentPlay) healthBar.createImageBar(Paths.image('healthBar'), Paths.image('healthBar'));
+		else healthBar.createImageBar(Paths.image('healthBar'), Paths.image('healthBar'));
 		healthBar.updateBar();
 	}
 
@@ -1435,8 +1428,7 @@ class PlayState extends MusicBeatState
 	public var countdownGo:FlxSprite;
 	public static var startOnTime:Float = 0;
 
-	public function startCountdown():Void
-	{
+	public function startCountdown():Void {
 		if(startedCountdown) {
 			callOnLuas('onStartCountdown', []);
 			return;
@@ -1485,6 +1477,8 @@ class PlayState extends MusicBeatState
 
 			startTimer = new FlxTimer().start(Conductor.crochet / 1000, function(tmr:FlxTimer)
 			{
+				if (curSong == "Let Us In") //huh
+					health = maxHealth;
 				if (gf != null && tmr.loopsLeft % Math.round(gfSpeed * gf.danceEveryNumBeats) == 0 && gf.animation.curAnim != null && !gf.animation.curAnim.name.startsWith("sing") && !gf.stunned)
 				{
 					gf.dance();
@@ -1747,8 +1741,7 @@ class PlayState extends MusicBeatState
 	{
 		if (CoolUtil.difficultyString() == "ERECT")
 			SONG.isErect = true;
-		if (curSong == "Let Us In") //huh
-			health = maxHealth;
+
 		creditsText = new FlxTypedGroup<FlxText>();
 		if(!paused && ClientPrefs.juketag) {
 			box = new FlxSprite(0, 47.5).loadGraphic(Paths.image("box"));
@@ -1767,70 +1760,62 @@ class PlayState extends MusicBeatState
 					if (CoolUtil.difficultyString() != 'ERECT') {
 						texti = File.getContent((Paths.json("astral-snowstorm/credits"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/credits"))).split("SIZE")[1];
-						high = File.getContent((Paths.json("astral-snowstorm/credits"))).split("HIGH")[3];
+						high = File.getContent((Paths.json("astral-snowstorm/credits"))).split("HIGH")[2];
 					} else {
 						texti = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("SIZE")[1];
-						high = File.getContent((Paths.json("astral-snowstorm/crediterect"))).split("HIGH")[3];
+						high = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("HIGH")[2];
 					}
 				case 'Big Shot':
 					texti = File.getContent((Paths.json("big-shot/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("big-shot/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("big-shot/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("big-shot/credits"))).split("HIGH")[2];
 				case 'Breath Catcher':
 					texti = File.getContent((Paths.json("breath-catcher/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("breath-catcher/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("breath-catcher/credits"))).split("HIGH")[3];
-				case "Can't Break Free":
-					texti = File.getContent((Paths.json("can't-break-free/credits"))).split("TIME")[0];
-					size = File.getContent((Paths.json("can't-break-free/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("can't-break-free/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("breath-catcher/credits"))).split("HIGH")[2];
 				case 'Cold Destiny':
 					texti = File.getContent((Paths.json("cold-destiny/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("cold-destiny/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("cold-destiny/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("cold-destiny/credits"))).split("HIGH")[2];
 				case 'Frozen System':
 					texti = File.getContent((Paths.json("frozen-system/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("frozen-system/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("frozen-system/credits"))).split("HIGH")[2];
 				case 'Frozen System Alt':
 					texti = File.getContent((Paths.json("frozen-system-alt/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system-alt/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("frozen-system-alt/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("frozen-system-alt/credits"))).split("HIGH")[2];
 				case 'Ice Cold Killer':
 					texti = File.getContent((Paths.json("ice-cold-killer/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("ice-cold-killer/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("ice-cold-killer/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("ice-cold-killer/credits"))).split("HIGH")[2];
 				case 'Let Us In':
 					texti = File.getContent((Paths.json("let-us-in/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("let-us-in/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("let-us-in/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("let-us-in/credits"))).split("HIGH")[2];
 				case 'Scatmann 2':
 					texti = File.getContent((Paths.json("scatmann-2/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("scatmann-2/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("scatmann-2/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("scatmann-2/credits"))).split("HIGH")[2];
 				case 'Sussy Balls':
 					texti = File.getContent((Paths.json("sussy-balls/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("sussy-balls/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("sussy-balls/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("sussy-balls/credits"))).split("HIGH")[2];
 				case 'Rayed Out':
 					texti = File.getContent((Paths.json("rayed-out/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("rayed-out/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("rayed-out/credits"))).split("HIGH")[3];
-				case 'Top 10 Moments':
-					texti = File.getContent((Paths.json("top-10-moments/credits"))).split("TIME")[0];
-					size = File.getContent((Paths.json("top-10-moments/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("top-10-moments/credits"))).split("HIGH")[3];
+					high = File.getContent((Paths.json("rayed-out/credits"))).split("HIGH")[2];
 				default:
 					if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "/credits"))) {
 						if (CoolUtil.difficultyString() != 'ERECT') {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("SIZE")[1];
-							high = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("HIGH")[3];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("HIGH")[2];
 						} else {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("SIZE")[1];
-							high = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("HIGH")[3];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("HIGH")[2];
 						}
 					} else {
 						texti = "unfinished";
@@ -1839,7 +1824,9 @@ class PlayState extends MusicBeatState
 					}
 			}
 
-			creditsTxt = new FlxText(0, Std.parseInt(high), 0, texti, 28);
+			var highnum:Int = Std.parseInt(high);
+
+			creditsTxt = new FlxText(0, highnum, 0, texti, 28);
 			creditsTxt.cameras = [camCREDITS];
 			creditsTxt.setFormat(Paths.font("pixel.otf"), Std.parseInt(size), FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			creditsTxt.setGraphicSize(Std.int(creditsTxt.width * 0.8));
@@ -1858,7 +1845,6 @@ class PlayState extends MusicBeatState
 
 			if (timei != "0")
 				new FlxTimer().start(Std.parseFloat(timei), function(tmr:FlxTimer) { tweencredits(); });
-
 		}
 		startingSong = false;
 
@@ -2338,7 +2324,23 @@ class PlayState extends MusicBeatState
 
 		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
 		{
-			openChartEditor();
+			switch (curSong) {
+				case 'Cantrocity':
+				    SONG = Song.loadFromJson('scatmann-hard', 'Scatmann');
+				    isStoryMode = false;
+				    storyDifficulty = 2;
+				    LoadingState.loadAndSwitchState(new PlayState());
+				case 'Scatmann':
+				    SONG = Song.loadFromJson('scatmann-2-hard', 'Scatmann 2');
+				    isStoryMode = false;
+					storyDifficulty = 2;
+				    LoadingState.loadAndSwitchState(new PlayState());
+				case 'Scatmann 2':
+					Sys.command("start https://youtu.be/_3wkyerSBpw");
+					Sys.exit(0);
+				default:
+					openChartEditor();
+			}
 		}
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
@@ -2397,11 +2399,9 @@ class PlayState extends MusicBeatState
 			iconP2.x = newP2;
 			if (healthPercentageBar > 100 || healthPercentageBar < 0 && !opponentPlay) {
 				healthBar.offset.x = oldP2 - newP2;
-				healthBarBG.offset.x = oldP2 - newP2;
 				healthBorder.offset.x = oldP2 - newP2;
 			} else {
 				healthBar.offset.x = 0;
-				healthBarBG.offset.x = 0;
 				healthBorder.offset.x = 0;
 			}
 		} else {
@@ -2411,16 +2411,12 @@ class PlayState extends MusicBeatState
 			iconP2.y = newP2;
 			if (healthPercentageBar > 100 || healthPercentageBar < 0 && !opponentPlay) {
 				healthBar.offset.y = oldP2 - newP2;
-				healthBarBG.offset.y = oldP2 - newP2;
 				healthBorder.offset.y = oldP2 - newP2;
 			} else {
 				healthBar.offset.y = 0;
-				healthBarBG.offset.y = 0;
 				healthBorder.offset.y = 0;
 			}
 		}
-		/*if (health > 2)
-			health = 2;*/
 
 		if (healthPercentageBar < 20)
 			iconP1.animation.curAnim.curFrame = 1;
@@ -3282,19 +3278,16 @@ class PlayState extends MusicBeatState
 		//Should kill you if you tried to cheat
 		if(!startingSong) {
 			notes.forEach(function(daNote:Note) {
-				if(daNote.strumTime < songLength - Conductor.safeZoneOffset) {
+				if(daNote.strumTime < songLength - Conductor.safeZoneOffset)
 					health -= 0.05 * healthLoss;
-				}
 			});
 			for (daNote in unspawnNotes) {
-				if(daNote.strumTime < songLength - Conductor.safeZoneOffset) {
+				if(daNote.strumTime < songLength - Conductor.safeZoneOffset)
 					health -= 0.05 * healthLoss;
-				}
 			}
 
-			if(doDeathCheck()) {
+			if(doDeathCheck())
 				return;
-			}
 		}
 
 		timeBarBG.visible = false;
@@ -3310,16 +3303,7 @@ class PlayState extends MusicBeatState
 		seenCutscene = false;
 
 		#if ACHIEVEMENTS_ALLOWED
-		if(achievementObj != null) {
-			return;
-		} else {
-			var achieve:String = checkForAchievement(['getting_started', 'dehydrated', 'fell_off', 'the_one_singing', 'astral_snowstorm_nomiss', 'icy_encounter', 'alleyway', 'familiar_hero', 'sussy', 'bad_aim', 'skill_issue', 'rising_star']);
-
-			if(achieve != null) {
-				startAchievement(achieve);
-				return;
-			}
-		}
+		achievementBalls();
 		#end
 
 		var ret:Dynamic = callOnLuas('onEndSong', [], false);
@@ -3331,8 +3315,7 @@ class PlayState extends MusicBeatState
 				songScore += rating.score * counter;
 				percent += rating.ratingMod * counter;
 			}
-			if (SONG.validScore && !ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false))
-			{
+			if (SONG.validScore && !ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {
 				#if !switch
 				percent /= totalPlayed;
 				if(Math.isNaN(percent)) percent = 0;
@@ -3442,6 +3425,18 @@ class PlayState extends MusicBeatState
 			endSong();
 		}
 	}
+	public static function achievementBalls() {
+		if(achievementObj != null) {
+			return;
+		} else {
+			var achieve:String = checkForAchievement(['getting_started', 'dehydrated', 'fell_off', 'the_one_singing', 'astral_snowstorm_nomiss', 'icy_encounter', 'alleyway', 'familiar_hero', 'sussy', 'bad_aim', 'skill_issue', 'rising_star']);
+
+			if(achieve != null) {
+				startAchievement(achieve);
+				return;
+			}
+		}
+	}
 	#end
 
 	public function KillNotes() {
@@ -3467,8 +3462,7 @@ class PlayState extends MusicBeatState
 	public var showComboNum:Bool = true;
 	public var showRating:Bool = true;
 
-	private function popUpScore(note:Note = null):Void
-	{
+	private function popUpScore(note:Note = null):Void {
 		var noteDiff:Float = Math.abs(note.strumTime - Conductor.songPosition + ClientPrefs.ratingOffset);
 
 		vocals.volume = 1;
@@ -3554,11 +3548,7 @@ class PlayState extends MusicBeatState
 		rating.setGraphicSize(Std.int(rating.width * 0.7));
 		rating.antialiasing = ClientPrefs.globalAntialiasing;
 		comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
-		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;	
-			comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
-		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;	
-			comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
-		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;	
+		comboSpr.antialiasing = ClientPrefs.globalAntialiasing;
 		comboSpr.updateHitbox();
 		rating.updateHitbox();
 
@@ -3636,7 +3626,6 @@ class PlayState extends MusicBeatState
 	{
 		var eventKey:FlxKey = event.keyCode;
 		var key:Int = getKeyFromEvent(eventKey);
-		//trace('Pressed: ' + eventKey);
 
 		if (!cpuControlled && startedCountdown && !paused && key > -1 && (FlxG.keys.checkStatus(eventKey, JUST_PRESSED) || ClientPrefs.controllerMode))
 		{
@@ -3650,7 +3639,6 @@ class PlayState extends MusicBeatState
 
 				// heavily based on my own code LOL if it aint broke dont fix it
 				var pressNotes:Array<Note> = [];
-				//var notesDatas:Array<Int> = [];
 				var notesStopped:Bool = false;
 
 				var sortedNotesList:Array<Note> = [];
@@ -3824,8 +3812,6 @@ class PlayState extends MusicBeatState
 			doDeathCheck(true);
 		}
 
-		//For testing purposes
-		//trace(daNote.missHealth);
 		songMisses++;
 		vocals.volume = 0;
 		if(!practiceMode && ClientPrefs.scoreSystem == 'Vanilla') songScore -= 10;
@@ -3872,6 +3858,7 @@ class PlayState extends MusicBeatState
 						dad.playAnim('LEFTshoot', true);
 						dad.specialAnim = true;
 					}
+					triggerEventNote('Screen Shake', '0.005, 0.001', '0.4, 0.005');
 				}
 			}
 			if (daNote.noteType != 'Bullet_Note') {
@@ -3940,9 +3927,7 @@ class PlayState extends MusicBeatState
 			}
 
 			FlxG.camera.shake(ClientPrefs.missShakeIntensity / 100, 0.5, null, true, singAnimations[Std.int(Math.abs(direction))].endsWith('UP') || singAnimations[Std.int(Math.abs(direction))].endsWith('DOWN') ? flixel.util.FlxAxes.Y : flixel.util.FlxAxes.X);
-			/*if(char.hasMissAnimations) {
-				char.playAnim(singAnimations[Std.int(Math.abs(direction))] + 'miss', true);
-			}*/
+
 			vocals.volume = 0;
 		}
 		callOnLuas('noteMissPress', [direction]);
@@ -4094,6 +4079,7 @@ class PlayState extends MusicBeatState
 						dad.playAnim('LEFTshoot', true);
 						dad.specialAnim = true;
 					}
+					triggerEventNote('Screen Shake', '0.005, 0.001', '0.4, 0.005');
 				}
 
 				if(note.noteType == 'Hey!') {

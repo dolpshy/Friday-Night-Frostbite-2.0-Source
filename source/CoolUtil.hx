@@ -29,10 +29,9 @@ class CoolUtil
 		'MANIA',
 		// CODES MENU DIFF
 		'DELICIOUS',
-		'CORRUPTED',
 		'VIOLENCE',
-		'CHAINED',
-		'REMATCH'
+		'REMATCH',
+		'ALT'
 	];
 
 	inline public static function quantize(f:Float, snap:Float){

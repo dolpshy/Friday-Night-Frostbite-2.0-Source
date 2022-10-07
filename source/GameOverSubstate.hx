@@ -120,15 +120,20 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend = new Boyfriend(x, y, characterName);
 		boyfriend.x += boyfriend.positionArray[0];
 		boyfriend.y += boyfriend.positionArray[1];
-		var week:String = WeekData.getCurrentWeek().weekName;
-		if (week == 'The Interesting Sussy Sussy')
+		if (isStoryMode) {
+			var week:String = WeekData.getCurrentWeek().weekName;
+			if (week == 'The Interesting Sussy Sussy')
+				boyfriend.visible = false;
+		}
+		if (curSong == 'Frozen System' && curSong == 'Frozen System')
 			boyfriend.visible = false;
+
 		add(boyfriend);
 
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 
 		quoteText.y = camFollow.y;
-		quoteText.y += 150;
+		quoteText.y += 100;
 		quoteText.screenCenter(X);
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
@@ -171,6 +176,8 @@ class GameOverSubstate extends MusicBeatSubstate
 		add(new AchievementObject('skill_issue', camAchievement));
 		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 	}
+
+	PlayState.achievementBalls();
 	#end
 
 	override function update(elapsed:Float)

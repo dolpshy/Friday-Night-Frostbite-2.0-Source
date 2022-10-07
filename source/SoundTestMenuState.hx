@@ -119,37 +119,10 @@ class SoundTestMenuState extends MusicBeatState
 			{
 				LoadingState.loadAndSwitchState(new PlayState());
 			});
-        } else if (first == 88 && second == 91) {
-			PlayState.SONG = Song.loadFromJson('avalanche-corrupted', 'Avalanche');
-			PlayState.isCodes = true;
-			PlayState.storyDifficulty = 6;
-			flashshit(true);
-			new FlxTimer().start(2, function(tmr:FlxTimer)
-			{
-				LoadingState.loadAndSwitchState(new PlayState());
-			});
         } else if (first == 43 && second == 72) {
 			PlayState.SONG = Song.loadFromJson('warfare-violence', 'Warfare');
 			PlayState.isCodes = true;
-			PlayState.storyDifficulty = 7;
-			flashshit(true);
-			new FlxTimer().start(2, function(tmr:FlxTimer)
-			{
-				LoadingState.loadAndSwitchState(new PlayState());
-			});
-        } else if (first == 69 && second == 69) {
-			PlayState.SONG = Song.loadFromJson('top-10-moments-hard', 'Top-10-Moments');
-			PlayState.isCodes = true;
-			PlayState.storyDifficulty = 2;
-			flashshit(true);
-			new FlxTimer().start(2, function(tmr:FlxTimer)
-			{
-				LoadingState.loadAndSwitchState(new PlayState());
-			});
-        } else if (first == 18 && second == 27) {
-			PlayState.SONG = Song.loadFromJson('can_t-break-free-chained', "Can't-Break-Free");
-			PlayState.isCodes = true;
-			PlayState.storyDifficulty = 8;
+			PlayState.storyDifficulty = 6;
 			flashshit(true);
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
@@ -158,16 +131,25 @@ class SoundTestMenuState extends MusicBeatState
         } else if (first == 52 && second == 73) {
 			PlayState.SONG = Song.loadFromJson('aiden-rematch', 'Aiden');
 			PlayState.isCodes = true;
-			PlayState.storyDifficulty = 9;
+			PlayState.storyDifficulty = 7;
 			flashshit(true);
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
 				LoadingState.loadAndSwitchState(new PlayState());
 			});
         } else if (first == 12 && second == 12) {
-			PlayState.SONG = Song.loadFromJson('frozen-system-hard', 'Frozen-System');
+			PlayState.SONG = Song.loadFromJson('frozen-system-hard', 'Frozen System');
 			PlayState.isCodes = true;
 			PlayState.storyDifficulty = 2;
+			flashshit(true);
+			new FlxTimer().start(2, function(tmr:FlxTimer)
+			{
+				LoadingState.loadAndSwitchState(new PlayState());
+			});
+        } else if (first == 12 && second == 13) {
+			PlayState.SONG = Song.loadFromJson('frozen-system-alt-alt', 'Frozen System Alt');
+			PlayState.isCodes = true;
+			PlayState.storyDifficulty = 8;
 			flashshit(true);
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{

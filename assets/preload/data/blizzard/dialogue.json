@@ -1,76 +1,60 @@
 {
 	"dialogue": [
 		{
-			"expression": "confused",
-			"text": "Oh damn i didn\"'t actually think you were gonna beat that",
-			"boxState": "normal",
-			"portrait": "frosty",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "talk",
-			"text": "are you gonna turn into a 3rd song phase now",
-			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.05,
-			"sound": "BoyDialogue"
-		},
-		{
-			"expression": "excited",
-			"text": "Yeah basically",
-			"boxState": "normal",
-			"portrait": "frosty",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "shocked",
-			"text": "GRRRAAAHHHHHHHHHHHHHHHHHH",
-			"boxState": "normal",
 			"sound": "",
 			"speed": 0.05,
-			"portrait": "frosty"
-		},
-		{
-			"expression": "talk",
-			"text": "Yoooooooooo",
-			"boxState": "normal",
-			"sound": "",
-			"speed": 0.05,
-			"portrait": "the_funni"
-		},
-		{
-			"expression": "talk",
-			"text": "I'm a darker blue now!!!",
-			"boxState": "normal",
 			"portrait": "the_funni",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
-			"expression": "excited",
-			"text": "Uhhmmm yeah that makes absolutely sense",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.05,
-			"sound": ""
-		},
-		{
 			"expression": "bruh",
-			"text": "Yeah, you know what, let's just start this song before i die from waiting...",
-			"boxState": "normal",
-			"portrait": "the_funni",
-			"speed": 0.05,
-			"sound": ""
+			"text": "......."
 		},
 		{
-			"expression": "pissed",
-			"text": "Let's go!",
-			"boxState": "normal",
-			"portrait": "bf",
+			"sound": "",
 			"speed": 0.05,
-			"sound": ""
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Wh-What is happening?....."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "I've had ENOUGH of you"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "I...."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni",
+			"boxState": "normal",
+			"expression": "evil",
+			"text": "Fine kid, i know you really wanna sing one last song, so be it then."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "the_funni",
+			"boxState": "normal",
+			"expression": "evil",
+			"text": "GF, turn that shit up"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bet!"
 		}
 	]
 }

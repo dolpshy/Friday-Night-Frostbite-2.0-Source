@@ -36,6 +36,7 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		'options',
+		'credits',
 		'awards',
 		'sound_test'
 	];
@@ -153,6 +154,12 @@ class MainMenuState extends MusicBeatState
 					menuItem.y -= 425;
 					menuItem.scale.x = scale - 0.1;
 					menuItem.scale.y = scale - 0.1;
+				case 5:
+					menuItem.screenCenter(X);
+					menuItem.x += 380;
+					menuItem.y -= 425;
+					menuItem.scale.x = scale - 0.1;
+					menuItem.scale.y = scale - 0.1;
 			}
 		}
 
@@ -250,6 +257,8 @@ class MainMenuState extends MusicBeatState
 									MusicBeatState.switchState(new FreeplayState());
 								case 'awards':
 									MusicBeatState.switchState(new AchievementsMenuState());
+								case 'credits':
+									MusicBeatState.switchState(new CreditsSelectState());
 								case 'sound_test':
 									MusicBeatState.switchState(new SoundTestMenuState());
 								case 'options':

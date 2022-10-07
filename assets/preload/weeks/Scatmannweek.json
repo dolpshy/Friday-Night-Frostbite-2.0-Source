@@ -20,7 +20,7 @@
 		]
 	],
 	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
+	"hideFreeplay": true,
 	"weekBackground": "",
 	"difficulties": "NORMAL, HARD",
 	"weekCharacters": [
