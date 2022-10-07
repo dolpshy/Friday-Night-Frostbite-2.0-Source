@@ -7,8 +7,7 @@ import flixel.FlxG;
 using StringTools;
 
 
-class CreditsSelectState extends MusicBeatState
-{
+class CreditsSelectState extends MusicBeatState {
     var creditsCats:Array<String> = ['Frostbite', "Og"];
 	var grpCats:FlxTypedGroup<Alphabet>;
 	var curSelected:Int = 0;
@@ -31,8 +30,7 @@ class CreditsSelectState extends MusicBeatState
         super.create();
     }
 
-    override public function update(elapsed:Float){
-        
+    override public function update(elapsed:Float) {
 		if (controls.UI_UP_P) 
 			changeSelection(-1);
 		if (controls.UI_DOWN_P) 
