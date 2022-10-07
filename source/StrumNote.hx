@@ -95,11 +95,6 @@ class StrumNote extends FlxSprite
 				resetAnim = 0;
 			}
 		}
-		//if(animation.curAnim != null){ //my bad i was upset
-		if(animation.curAnim.name == 'confirm') {
-			centerOrigin();
-		//}
-		}
 
 		super.update(elapsed);
 	}
@@ -107,7 +102,6 @@ class StrumNote extends FlxSprite
 	public function playAnim(anim:String, ?force:Bool = false) {
 		animation.play(anim, force);
 		centerOffsets();
-		centerOrigin();
 		if(animation.curAnim == null || animation.curAnim.name == 'static') {
 			colorSwap.hue = 0;
 			colorSwap.saturation = 0;
@@ -116,10 +110,6 @@ class StrumNote extends FlxSprite
 			colorSwap.hue = ClientPrefs.arrowHSV[noteData % 4][0] / 360;
 			colorSwap.saturation = ClientPrefs.arrowHSV[noteData % 4][1] / 100;
 			colorSwap.brightness = ClientPrefs.arrowHSV[noteData % 4][2] / 100;
-
-			if(animation.curAnim.name == 'confirm') {
-				centerOrigin();
-			}
 		}
 	}
 }
