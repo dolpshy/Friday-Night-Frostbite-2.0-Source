@@ -46,7 +46,7 @@
 	<define name="VIDEOS_ALLOWED" if="web || windows" unless="32bits"/>
 	<define name="CRASH_HANDLER" if="desktop release" />
 
-	<assets path="assets/preload" rename="assets"/>
+	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
 
 	<define name="PRELOAD_ALL"/>
 	
@@ -55,10 +55,10 @@
 	<library name="shared"        preload="true" />
 	<library name="credits"        preload="true" />
 	
+	<assets path="assets/images/credits"        library="credits"/>
 	<assets path="assets/videos"        library="videos"/>
 	<assets path="assets/songs"         library="songs"         exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"        library="shared"        exclude="*.ogg" if="web"/>
-	<assets path="assets/credits"        library="credits"/>
 	<assets path="assets/fonts" embed='true'/>
 	
 	<!-- _______________________________ Libraries ______________________________ -->
