@@ -659,7 +659,7 @@ class PlayState extends MusicBeatState
 				var basement:BGSprite = new BGSprite('basement', -600, -300, 0.9, 0.9);
 				add(basement);
 			case 'dark_alleyway':
-				var darkalleyway:BGSprite = new BGSprite('dark_alleyway', -350, -300, 0.9, 0.9);
+				var darkalleyway:BGSprite = new BGSprite('dark_alleyway', -600, -360, 0.9, 0.9);
 				add(darkalleyway);
 			case 'dark_winter':
 				var darkwinter:BGSprite = new BGSprite('dark_winter', -750, -280, 0.9, 0.9);
