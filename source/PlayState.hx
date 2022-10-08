@@ -425,10 +425,6 @@ class PlayState extends MusicBeatState
 				textthingies.text = myass[25];
 		} 
 		// TheReel REALLY SUCKS as coder
-		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
-		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-		add(topBar);
-		add(bottomBar);
 
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
@@ -440,12 +436,18 @@ class PlayState extends MusicBeatState
 		debugKeysCharacter = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_2'));
 		PauseSubState.songName = null; //Reset to default
 
+		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
+		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
+		add(topBar);
+		add(bottomBar);
 		keysArray = [
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_up')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
 		];
+		
+		flashyWashy = new FlxSprite(0, 0).makeGraphic(1280, 170, FlxColor.White);
 
 		//Ratings
 		if(ClientPrefs.scoreSystem == 'osu!mania' || ClientPrefs.accuracySystem.startsWith('osu!mania')) ratingsData.push(new Rating('max')); //default rating
@@ -641,7 +643,7 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			case 'alleyway':
-				var alleyway:BGSprite = new BGSprite('alleyway', -700, -325, 0.9, 0.9);
+				var alleyway:BGSprite = new BGSprite('alleyway', -710, -345, 0.9, 0.9);
 				add(alleyway);
 			case 'alleyway2': // Frozen System BG fix
 				var alleyway:BGSprite = new BGSprite('alleyway', -700, -350, 0.9, 0.9);
@@ -803,6 +805,9 @@ class PlayState extends MusicBeatState
 		textthingies.cameras = [camHUD];
 		textthingies.screenCenter(X);
 		textthingies.scrollFactor.set();
+		
+		flashyWashy.cameras = [camHUD];
+		flashyWashy.screenCenter();
 
 		//so true
 		if (curSong == 'iceberg')
