@@ -641,7 +641,7 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			case 'alleyway':
-				var alleyway:BGSprite = new BGSprite('alleyway', -650, -325, 0.9, 0.9);
+				var alleyway:BGSprite = new BGSprite('alleyway', -700, -325, 0.9, 0.9);
 				add(alleyway);
 			case 'alleyway2': // Frozen System BG fix
 				var alleyway:BGSprite = new BGSprite('alleyway', -700, -350, 0.9, 0.9);
@@ -1031,7 +1031,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x-4, healthBarBG.y-2, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width+16), Std.int(healthBarBG.height+16), this,
+		healthBar = new FlxBar(healthBarBG.x-30, healthBarBG.y-16, (opponentPlay ? LEFT_TO_RIGHT : RIGHT_TO_LEFT), Std.int(healthBarBG.width+16), Std.int(healthBarBG.height+16), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		healthBar.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
