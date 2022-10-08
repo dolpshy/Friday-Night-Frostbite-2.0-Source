@@ -175,6 +175,9 @@ class PlayState extends MusicBeatState
 	// Cinematic Bars Event!!!
 	var topBar:FlxSprite;
 	var bottomBar:FlxSprite;
+	
+	// Flashy Bars Event!!!1!!
+	var flashyWashy:FlxSprite;
 
 	public var BF_X:Float = 770;
 	public var BF_Y:Float = 100;
@@ -447,7 +450,7 @@ class PlayState extends MusicBeatState
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_right'))
 		];
 		
-		flashyWashy = new FlxSprite(0, 0).makeGraphic(1280, 170, FlxColor.White);
+		flashyWashy = new FlxSprite(0, 0).makeGraphic(1280, 170, FlxColor.WHITE);
 		flashyWashy.alpha = 0;
 
 		//Ratings
@@ -3080,7 +3083,8 @@ class PlayState extends MusicBeatState
 				
 			case 'Flash_Camera':
 				var val1:Float = Std.parseFloat(value1);
-				flashyWashy(val1);
+				add(flashyWashy);
+				daFlashyWashy(val1);
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -3249,7 +3253,7 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	function flashyWashy(a:Float) {
+	function daFlashyWashy(a:Float) {
 		FlxTween.tween(flashyWashy, {alpha: 0}, a, {ease: FlxEase.circOut});
 		// remove flash
 		new FlxTimer().start(a, function(tmr:FlxTimer)
