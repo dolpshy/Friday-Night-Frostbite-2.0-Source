@@ -2033,7 +2033,8 @@ class PlayState extends MusicBeatState
 				if (swagNote.mustPress)
 				{
 					if (!swagNote.ignoreNote && !swagNote.isSustainNote) mustHitNoteCount++;
-					swagNote.x += FlxG.width / 2; // general offset
+					swagNote.x += FlxG.width / 2 + 60;
+					swagNote.y += 60;
 				}
 				else if(ClientPrefs.middleScroll)
 				{
@@ -3081,7 +3082,7 @@ class PlayState extends MusicBeatState
 
 				writeLyrics(text, duration, color);
 				
-			case 'Flash_Camera':
+			case 'Flash Camera':
 				var val1:Float = Std.parseFloat(value1);
 				add(flashyWashy);
 				daFlashyWashy(val1);

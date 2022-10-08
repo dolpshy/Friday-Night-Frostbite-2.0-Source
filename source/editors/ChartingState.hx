@@ -75,8 +75,8 @@ class ChartingState extends MusicBeatState
 	public var ignoreWarnings = false;
 	var undos = [];
 	var redos = [];
-	var eventStuff:Array<Dynamic> =
-	[
+	// THEREEL HAD 0 SEX!!!
+	var eventStuff:Array<Dynamic> = [
 		['', "Nothing. Yep, that's right."],
 		['Hey!', "Plays the \"Hey!\" animation from Bopeebo,\nValue 1: BF = Only Boyfriend, GF = Only Girlfriend,\nSomething else = Both.\nValue 2: Custom animation duration,\nleave it blank for 0.6s"],
 		['Set GF Speed', "Sets GF head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\nUsed on Fresh during the beatbox parts.\n\nWarning: Value must be integer!"],
@@ -93,7 +93,8 @@ class ChartingState extends MusicBeatState
 		['Opponent Note Visible', "Value 1: True or False"],
 		['Change To Middle Scroll', "Value 1: True or False"],
 		['Cinematic Bars', "Value 1: True or False"],
-		['Lyrics', "Lyrics!!!\nValue 1: Text and optionally, colour\n(To specify colour, seperate it by a --)\nValue 2: Duration in seconds.\nDuration defaults to text length multiplied by 0.5"]
+		['Lyrics', "Lyrics!!!\nValue 1: Text and optionally, colour\n(To specify colour, seperate it by a --)\nValue 2: Duration in seconds.\nDuration defaults to text length multiplied by 0.5"],
+		['Flash Camera', "FlashyWashy!!!!\nValue 1: Duration in seconds"]
 	];
 
 	var _file:FileReference;
