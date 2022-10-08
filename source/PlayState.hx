@@ -448,6 +448,7 @@ class PlayState extends MusicBeatState
 		];
 		
 		flashyWashy = new FlxSprite(0, 0).makeGraphic(1280, 170, FlxColor.White);
+		flashyWashy.alpha = 0;
 
 		//Ratings
 		if(ClientPrefs.scoreSystem == 'osu!mania' || ClientPrefs.accuracySystem.startsWith('osu!mania')) ratingsData.push(new Rating('max')); //default rating
@@ -3076,6 +3077,10 @@ class PlayState extends MusicBeatState
 					duration = text.length * 0.5;
 
 				writeLyrics(text, duration, color);
+				
+			case 'Flash_Camera':
+				var val1:Float = Std.parseFloat(value1);
+				flashyWashy(val1);
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -3242,6 +3247,15 @@ class PlayState extends MusicBeatState
 				}
 			});
 		}
+	}
+
+	function flashyWashy(a:Float) {
+		FlxTween.tween(flashyWashy, {alpha: 0}, a, {ease: FlxEase.circOut});
+		// remove flash
+		new FlxTimer().start(a, function(tmr:FlxTimer)
+		{
+			remove(flashyWashy);
+		});
 	}
 
 	function snapCamFollowToPos(x:Float, y:Float) {
