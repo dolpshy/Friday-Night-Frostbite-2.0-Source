@@ -362,6 +362,9 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		if (CoolUtil.difficultyString() == "ERECT")
+			SONG.isErect = true;
+
 		textthingies = new FlxText(0, 1000, 625, '');
 		creditsTxt = new FlxText(0, 25, 0, '', 24);
 
@@ -544,7 +547,7 @@ class PlayState extends MusicBeatState
 		}
 		else if (isCodes)
 		{
-			detailsText = "Funny Codes Song";
+			detailsText = "Codes Song";
 		}
 		else
 		{
@@ -638,7 +641,7 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			case 'alleyway':
-				var alleyway:BGSprite = new BGSprite('alleyway', -600, -350, 0.9, 0.9);
+				var alleyway:BGSprite = new BGSprite('alleyway', -650, -325, 0.9, 0.9);
 				add(alleyway);
 			case 'alleyway2': // Frozen System BG fix
 				var alleyway:BGSprite = new BGSprite('alleyway', -700, -350, 0.9, 0.9);
@@ -654,6 +657,7 @@ class PlayState extends MusicBeatState
 				add(darkalleyway);
 			case 'dark_winter':
 				var darkwinter:BGSprite = new BGSprite('dark_winter', -750, -280, 0.9, 0.9);
+				darkwinter.setGraphicSize(Std.int(darkwinter.width * 1.1));
 				add(darkwinter);
 			case 'erect_somethingfunni':
 				var erectfunni:BGSprite = new BGSprite('erect_somethingfunni', -600, -300, 0.9, 0.9);
@@ -1737,11 +1741,7 @@ class PlayState extends MusicBeatState
 	var lastReportedPlayheadPosition:Int = 0;
 	var songTime:Float = 0;
 
-	function startSong():Void
-	{
-		if (CoolUtil.difficultyString() == "ERECT")
-			SONG.isErect = true;
-
+	function startSong():Void {
 		creditsText = new FlxTypedGroup<FlxText>();
 		if(!paused && ClientPrefs.juketag) {
 			box = new FlxSprite(0, 47.5).loadGraphic(Paths.image("box"));
@@ -1826,13 +1826,14 @@ class PlayState extends MusicBeatState
 
 			var highnum:Int = Std.parseInt(high);
 
-			creditsTxt = new FlxText(0, highnum, 0, texti, 28);
+			creditsTxt = new FlxText(0, 0, 0, texti, 28);
 			creditsTxt.cameras = [camCREDITS];
 			creditsTxt.setFormat(Paths.font("pixel.otf"), Std.parseInt(size), FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			creditsTxt.setGraphicSize(Std.int(creditsTxt.width * 0.8));
 			creditsTxt.updateHitbox();
 			creditsTxt.screenCenter(X);
 			creditsTxt.x -= 1000;
+			creditsTxt.y += highnum;
 			creditsText.add(creditsTxt);
 			add(creditsText);
 
@@ -1850,10 +1851,11 @@ class PlayState extends MusicBeatState
 
 		previousFrameTime = FlxG.game.ticks;
 		lastReportedPlayheadPosition = 0;
-		if (!SONG.isErect)
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
-		else
+		
+		if (SONG.isErect)
 			FlxG.sound.playMusic(Paths.insterect(PlayState.SONG.song), 1, false);
+		else
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 			
 		FlxG.sound.music.onComplete = onSongComplete;
 		vocals.play();
@@ -1906,10 +1908,10 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (SONG.needsVoices)
-			if (!SONG.isErect)
-				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
-			else
+			if (SONG.isErect)
 				vocals = new FlxSound().loadEmbedded(Paths.voiceserect(PlayState.SONG.song));
+			else
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 		else
 			vocals = new FlxSound();
 
@@ -2332,7 +2334,6 @@ class PlayState extends MusicBeatState
 				    LoadingState.loadAndSwitchState(new PlayState());
 				case 'Scatmann':
 				    SONG = Song.loadFromJson('scatmann-2-hard', 'Scatmann 2');
-				    isStoryMode = false;
 					storyDifficulty = 2;
 				    LoadingState.loadAndSwitchState(new PlayState());
 				case 'Scatmann 2':
@@ -2378,14 +2379,8 @@ class PlayState extends MusicBeatState
         if(iconP2.angle > 0)
         	iconP2.angle = CoolUtil.coolLerp(iconP2.angle, 0, Conductor.crochet / 1000 / 4);
 
-        if(iconP1.angle > 0)
-        	iconP1.angle = 0;
-        if(iconP2.angle < 0)
-            iconP2.angle = 0;
-
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
-
 
 		var iconOffset:Int = 26;
 
