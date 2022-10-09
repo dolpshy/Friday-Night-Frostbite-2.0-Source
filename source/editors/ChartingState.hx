@@ -232,8 +232,6 @@ class ChartingState extends MusicBeatState
 			PlayState.SONG = _song;
 		}
 
-		check_isErect.checked = _song.isErect;
-
 		// Erect song!!!
 		if (check_isErect != null && check_isErect.checked)
 			huhhuh = true;
@@ -424,6 +422,7 @@ class ChartingState extends MusicBeatState
 		};
 
 		var check_isErect = new FlxUICheckBox(10, 42, null, null, "Erect Song", 100);
+		check_isErect.checked = _song.isErect;
 		check_isErect.callback = function()
 		{
 			_song.isErect = check_isErect.checked;

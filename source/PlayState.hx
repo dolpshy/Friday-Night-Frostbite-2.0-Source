@@ -3084,6 +3084,7 @@ class PlayState extends MusicBeatState
 				
 			case 'Flash Camera':
 				var val1:Float = Std.parseFloat(value1);
+				flashyWashy.alpha = 1;
 				add(flashyWashy);
 				daFlashyWashy(val1);
 		}
