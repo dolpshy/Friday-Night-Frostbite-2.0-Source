@@ -431,8 +431,6 @@ class PlayState extends MusicBeatState
 
 		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
 		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-		add(topBar);
-		add(bottomBar);
 
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
@@ -1135,7 +1133,7 @@ class PlayState extends MusicBeatState
 
 		topBar.cameras = [camOther];
 		bottomBar.cameras = [camOther];
-		
+
 		startingSong = true;
 		
 		// SONG SPECIFIC SCRIPTS
@@ -3126,13 +3124,20 @@ class PlayState extends MusicBeatState
 
 	var alreadyCB:Bool = false;
 	function cinematicBars(appear:Bool) {
-		if (appear && !alreadyCB) {
+		if (appear && !alreadyCB)
+		{
+			add(topBar);
+			add(bottomBar);
 			FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
 			FlxTween.tween(bottomBar, {y: 550}, 0.5, {ease: FlxEase.quadOut});
 			alreadyCB = true;
 		} else {
 			FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
-			FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
+			{
+				remove(topBar);
+				remove(bottomBar);
+			}});
 			alreadyCB = false;
 		}
 	}
