@@ -365,6 +365,11 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
+		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
+		add(topBar);
+		add(bottomBar);
+
 		if (CoolUtil.difficultyString() == "ERECT")
 			SONG.isErect = true;
 
@@ -439,10 +444,6 @@ class PlayState extends MusicBeatState
 		debugKeysCharacter = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_2'));
 		PauseSubState.songName = null; //Reset to default
 
-		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
-		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-		add(topBar);
-		add(bottomBar);
 		keysArray = [
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_down')),
@@ -662,7 +663,7 @@ class PlayState extends MusicBeatState
 				var darkalleyway:BGSprite = new BGSprite('dark_alleyway', -600, -360, 0.9, 0.9);
 				add(darkalleyway);
 			case 'dark_winter':
-				var darkwinter:BGSprite = new BGSprite('dark_winter', -750, -280, 0.9, 0.9);
+				var darkwinter:BGSprite = new BGSprite('dark_winter', -760, -280, 0.9, 0.9);
 				darkwinter.setGraphicSize(Std.int(darkwinter.width * 1.1));
 				add(darkwinter);
 			case 'erect_somethingfunni':
@@ -1025,7 +1026,7 @@ class PlayState extends MusicBeatState
 		healthBorder.scrollFactor.set();
 		healthBorder.visible = !ClientPrefs.hideHud && ClientPrefs.healthBarType != 'Disabled';
 		healthBorder.alpha = ClientPrefs.healthBarAlpha;
-		healthBorder.xAdd = -30;
+		healthBorder.xAdd = 6;
 		healthBorder.yAdd = -28;
 		add(healthBorder);
 		if(ClientPrefs.downScroll) healthBorder.y = 0.11 * FlxG.height;
@@ -1035,7 +1036,7 @@ class PlayState extends MusicBeatState
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.visible = false;
-		healthBarBG.xAdd = 20;
+		healthBarBG.xAdd = 56;
 		healthBarBG.yAdd = -4;
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
@@ -1111,6 +1112,9 @@ class PlayState extends MusicBeatState
 			healthBar.x = ClientPrefs.healthBarType.endsWith('(left)') ? -245 : FlxG.width - 350;
 			healthBar.screenCenter(Y);
 		}
+		topBar.cameras = [camOther];
+		bottomBar.cameras = [camOther];
+
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -1126,13 +1130,10 @@ class PlayState extends MusicBeatState
 		timeBar.cameras = [camHUD];
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
-		playerLaneUnderlay.cameras = [camHUD];
+		playerLaneUnderlay.cameras = [/camHUD];
 		opponentLaneUnderlay.cameras = [camHUD];
 		doof.cameras = [camHUD];
 		versionTxt.cameras = [camHUD];
-
-		topBar.cameras = [camOther];
-		bottomBar.cameras = [camOther];
 
 		startingSong = true;
 		
@@ -1493,17 +1494,11 @@ class PlayState extends MusicBeatState
 				if (curSong == "Let Us In") //huh
 					health = maxHealth;
 				if (gf != null && tmr.loopsLeft % Math.round(gfSpeed * gf.danceEveryNumBeats) == 0 && gf.animation.curAnim != null && !gf.animation.curAnim.name.startsWith("sing") && !gf.stunned)
-				{
 					gf.dance();
-				}
 				if (tmr.loopsLeft % boyfriend.danceEveryNumBeats == 0 && boyfriend.animation.curAnim != null && !boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.stunned)
-				{
 					boyfriend.dance();
-				}
 				if (tmr.loopsLeft % dad.danceEveryNumBeats == 0 && dad.animation.curAnim != null && !dad.animation.curAnim.name.startsWith('sing') && !dad.stunned)
-				{
 					dad.dance();
-				}
 
 				var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
 				introAssets.set('default', ['ready', 'set', 'go']);
@@ -1604,18 +1599,9 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	public function addBehindGF(obj:FlxObject)
-	{
-		insert(members.indexOf(gfGroup), obj);
-	}
-	public function addBehindBF(obj:FlxObject)
-	{
-		insert(members.indexOf(boyfriendGroup), obj);
-	}
-	public function addBehindDad (obj:FlxObject)
-	{
-		insert(members.indexOf(dadGroup), obj);
-	}
+	public function addBehindGF(obj:FlxObject) insert(members.indexOf(gfGroup), obj);
+	public function addBehindBF(obj:FlxObject) insert(members.indexOf(boyfriendGroup), obj);
+	public function addBehindDad (obj:FlxObject) insert(members.indexOf(dadGroup), obj);
 
 	public function clearNotesBefore(time:Float)
 	{
@@ -1769,62 +1755,62 @@ class PlayState extends MusicBeatState
 					if (CoolUtil.difficultyString() != 'ERECT') {
 						texti = File.getContent((Paths.json("astral-snowstorm/credits"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/credits"))).split("SIZE")[1];
-						high = File.getContent((Paths.json("astral-snowstorm/credits"))).split("HIGH")[2];
+						high = File.getContent((Paths.json("astral-snowstorm/credits"))).split("HIGH")[1];
 					} else {
 						texti = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("TIME")[0];
 						size = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("SIZE")[1];
-						high = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("HIGH")[2];
+						high = File.getContent((Paths.json("astral-snowstorm/creditserect"))).split("HIGH")[1];
 					}
 				case 'Big Shot':
 					texti = File.getContent((Paths.json("big-shot/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("big-shot/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("big-shot/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("big-shot/credits"))).split("HIGH")[1];
 				case 'Breath Catcher':
 					texti = File.getContent((Paths.json("breath-catcher/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("breath-catcher/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("breath-catcher/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("breath-catcher/credits"))).split("HIGH")[1];
 				case 'Cold Destiny':
 					texti = File.getContent((Paths.json("cold-destiny/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("cold-destiny/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("cold-destiny/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("cold-destiny/credits"))).split("HIGH")[1];
 				case 'Frozen System':
 					texti = File.getContent((Paths.json("frozen-system/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("frozen-system/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("frozen-system/credits"))).split("HIGH")[1];
 				case 'Frozen System Alt':
 					texti = File.getContent((Paths.json("frozen-system-alt/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("frozen-system-alt/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("frozen-system-alt/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("frozen-system-alt/credits"))).split("HIGH")[1];
 				case 'Ice Cold Killer':
 					texti = File.getContent((Paths.json("ice-cold-killer/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("ice-cold-killer/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("ice-cold-killer/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("ice-cold-killer/credits"))).split("HIGH")[1];
 				case 'Let Us In':
 					texti = File.getContent((Paths.json("let-us-in/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("let-us-in/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("let-us-in/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("let-us-in/credits"))).split("HIGH")[1];
 				case 'Scatmann 2':
 					texti = File.getContent((Paths.json("scatmann-2/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("scatmann-2/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("scatmann-2/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("scatmann-2/credits"))).split("HIGH")[1];
 				case 'Sussy Balls':
 					texti = File.getContent((Paths.json("sussy-balls/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("sussy-balls/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("sussy-balls/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("sussy-balls/credits"))).split("HIGH")[1];
 				case 'Rayed Out':
 					texti = File.getContent((Paths.json("rayed-out/credits"))).split("TIME")[0];
 					size = File.getContent((Paths.json("rayed-out/credits"))).split("SIZE")[1];
-					high = File.getContent((Paths.json("rayed-out/credits"))).split("HIGH")[2];
+					high = File.getContent((Paths.json("rayed-out/credits"))).split("HIGH")[1];
 				default:
 					if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "/credits"))) {
 						if (CoolUtil.difficultyString() != 'ERECT') {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("SIZE")[1];
-							high = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("HIGH")[2];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("HIGH")[1];
 						} else {
 							texti = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("TIME")[0];
 							size = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("SIZE")[1];
-							high = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("HIGH")[2];
+							high = File.getContent((Paths.json(curSong.toLowerCase() + "/creditserect"))).split("HIGH")[1];
 						}
 					} else {
 						texti = "unfinished";
@@ -1833,7 +1819,7 @@ class PlayState extends MusicBeatState
 					}
 			}
 
-			var highnum:Int = Std.parseInt(high);
+			var highnum:Float = Std.parseFloat(high);
 
 			creditsTxt = new FlxText(0, 0, 0, texti, 28);
 			creditsTxt.cameras = [camCREDITS];
@@ -3125,16 +3111,13 @@ class PlayState extends MusicBeatState
 		if (direction.endsWith("DOWN")) addY += ClientPrefs.cameraMoveIntensity;
 		if (direction.endsWith("LEFT")) addX -= ClientPrefs.cameraMoveIntensity;
 		if (direction.endsWith("RIGHT")) addX += ClientPrefs.cameraMoveIntensity;
-		if(isDad)
-		{
+		if(isDad) {
 			if (ClientPrefs.hideOpponent) return;
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
 			camFollow.x += dad.cameraPosition[0] + opponentCameraOffset[0] + addX;
 			camFollow.y += dad.cameraPosition[1] + opponentCameraOffset[1] + addY;
 			tweenCamIn();
-		}
-		else
-		{
+		} else {
 			if (ClientPrefs.hideBf) return;
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
 			camFollow.x -= boyfriend.cameraPosition[0] - boyfriendCameraOffset[0] - addX;
@@ -3153,23 +3136,16 @@ class PlayState extends MusicBeatState
 	}
 
 	var alreadyCB:Bool = false;
-	function cinematicBars(appear:Bool)
-		{
-			if (appear && !alreadyCB)
-			{
+	function cinematicBars(appear:Bool) {
+			if (appear && !alreadyCB) {
 				FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
 				FlxTween.tween(bottomBar, {y: 550}, 0.5, {ease: FlxEase.quadOut});
 
 				alreadyCB = true;
-			}
-			else
-			{
+			} else {
 				FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
 				FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
-				{
-					remove(topBar);
-					remove(bottomBar);
-				}});
+				
 				alreadyCB = false;
 			}
 		}
@@ -3255,14 +3231,7 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	function daFlashyWashy(a:Float) {
-		FlxTween.tween(flashyWashy, {alpha: 0}, a, {ease: FlxEase.circOut});
-		// remove flash
-		new FlxTimer().start(a, function(tmr:FlxTimer)
-		{
-			remove(flashyWashy);
-		});
-	}
+	function daFlashyWashy(a:Float) FlxTween.tween(flashyWashy, {alpha: 0}, a, {ease: FlxEase.circOut});
 
 	function snapCamFollowToPos(x:Float, y:Float) {
 		camFollow.set(x, y);
