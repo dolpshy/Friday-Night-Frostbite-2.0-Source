@@ -199,17 +199,13 @@ class ChartingState extends MusicBeatState
 		192
 	];
 
-
+	public var check_isErect:FlxUICheckBox = null;
 
 	var text:String = "";
 	public static var vortex:Bool = false;
 	public var mouseQuant:Bool = false;
 	override function create()
 	{
-		// Erect song!!!
-		if (check_isErect != null && check_isErect.checked)
-			huhhuh = true;
-		
 		if (PlayState.SONG != null)
 			_song = PlayState.SONG;
 		else
@@ -236,6 +232,12 @@ class ChartingState extends MusicBeatState
 			PlayState.SONG = _song;
 		}
 
+		check_isErect.checked = _song.isErect;
+
+		// Erect song!!!
+		if (check_isErect != null && check_isErect.checked)
+			huhhuh = true;
+		
 		// Paths.clearMemory();
 
 		#if desktop
@@ -398,7 +400,6 @@ class ChartingState extends MusicBeatState
 		super.create();
 	}
 
-	public var check_isErect:FlxUICheckBox = null;
 	var check_mute_inst:FlxUICheckBox = null;
 	var check_vortex:FlxUICheckBox = null;
 	var check_warnings:FlxUICheckBox = null;
@@ -423,7 +424,6 @@ class ChartingState extends MusicBeatState
 		};
 
 		var check_isErect = new FlxUICheckBox(10, 42, null, null, "Erect Song", 100);
-		check_isErect.checked = _song.isErect;
 		check_isErect.callback = function()
 		{
 			_song.isErect = check_isErect.checked;
