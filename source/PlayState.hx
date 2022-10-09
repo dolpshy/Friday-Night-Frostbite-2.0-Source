@@ -365,11 +365,6 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
-		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-		add(topBar);
-		add(bottomBar);
-
 		if (CoolUtil.difficultyString() == "ERECT")
 			SONG.isErect = true;
 
@@ -433,6 +428,11 @@ class PlayState extends MusicBeatState
 				textthingies.text = myass[25];
 		} 
 		// TheReel REALLY SUCKS as coder
+
+		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
+		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
+		add(topBar);
+		add(bottomBar);
 
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
@@ -1112,8 +1112,6 @@ class PlayState extends MusicBeatState
 			healthBar.x = ClientPrefs.healthBarType.endsWith('(left)') ? -245 : FlxG.width - 350;
 			healthBar.screenCenter(Y);
 		}
-		topBar.cameras = [camOther];
-		bottomBar.cameras = [camOther];
 
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
@@ -1135,6 +1133,9 @@ class PlayState extends MusicBeatState
 		doof.cameras = [camHUD];
 		versionTxt.cameras = [camHUD];
 
+		topBar.cameras = [camOther];
+		bottomBar.cameras = [camOther];
+		
 		startingSong = true;
 		
 		// SONG SPECIFIC SCRIPTS
@@ -3125,18 +3126,16 @@ class PlayState extends MusicBeatState
 
 	var alreadyCB:Bool = false;
 	function cinematicBars(appear:Bool) {
-			if (appear && !alreadyCB) {
-				FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
-				FlxTween.tween(bottomBar, {y: 550}, 0.5, {ease: FlxEase.quadOut});
-
-				alreadyCB = true;
-			} else {
-				FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
-				FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut});
-				
-				alreadyCB = false;
-			}
+		if (appear && !alreadyCB) {
+			FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 550}, 0.5, {ease: FlxEase.quadOut});
+			alreadyCB = true;
+		} else {
+			FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut});
+			alreadyCB = false;
 		}
+	}
 
 	var lyricText:FlxText;
 	var lyricTween:FlxTween;
@@ -3223,7 +3222,7 @@ class PlayState extends MusicBeatState
 
 	//Any way to do this without using a different function? kinda dumb
 	private function onSongComplete() finishSong(false);
-	
+
 	public function finishSong(?ignoreNoteOffset:Bool = false):Void
 	{
 		var finishCallback:Void->Void = endSong; //In case you want to change it in a specific song.
