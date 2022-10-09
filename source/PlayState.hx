@@ -2985,10 +2985,10 @@ class PlayState extends MusicBeatState
 			case 'Change To Middle Scroll':
 				if (value1 == 'true' && value1 != 'false' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {
-						FlxTween.tween(playerStrums.members[0], {x: 410}, 0.5, {ease: FlxEase.cubeinOut});
-						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.6, {ease: FlxEase.cubeinOut});
-						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.7, {ease: FlxEase.cubeinOut});
-						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.8, {ease: FlxEase.cubeinOut});
+						FlxTween.tween(playerStrums.members[0], {x: 415}, 0.5, {ease: FlxEase.cubeInOut});
+						FlxTween.tween(playerStrums.members[1], {x: 527}, 0.6, {ease: FlxEase.cubeInOut});
+						FlxTween.tween(playerStrums.members[2], {x: 638}, 0.7, {ease: FlxEase.cubeInOut});
+						FlxTween.tween(playerStrums.members[3], {x: 750}, 0.8, {ease: FlxEase.cubeInOut});
 					}
 					opponentStrums.forEach(function(spr:FlxSprite)
 					{
@@ -2999,10 +2999,10 @@ class PlayState extends MusicBeatState
 					if (!ClientPrefs.middleScroll) {
 						playerStrums.forEach(function(spr:FlxSprite)
 						{
-							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.5, {ease: FlxEase.cubeinOut});
-							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.6, {ease: FlxEase.cubeinOut});
-							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.7, {ease: FlxEase.cubeinOut});
-							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.8, {ease: FlxEase.cubeinOut});
+							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.5, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.6, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.7, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.8, {ease: FlxEase.cubeInOut});
 						});
 						opponentStrums.forEach(function(spr:FlxSprite)
 						{
