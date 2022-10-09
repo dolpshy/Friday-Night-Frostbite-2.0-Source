@@ -3080,8 +3080,7 @@ class PlayState extends MusicBeatState
 	function moveCameraSection():Void {
 		if(SONG.notes[curSection] == null) return;
 
-		if (gf != null && SONG.notes[curSection].gfSection)
-		{
+		if (gf != null && SONG.notes[curSection].gfSection) {
 			camFollow.set(gf.getMidpoint().x, gf.getMidpoint().y);
 			camFollow.x += gf.cameraPosition[0] + girlfriendCameraOffset[0];
 			camFollow.y += gf.cameraPosition[1] + girlfriendCameraOffset[1];
@@ -3090,21 +3089,17 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		if (!SONG.notes[curSection].mustHitSection)
-		{
+		if (!SONG.notes[curSection].mustHitSection){
 			moveCamera(true);
 			callOnLuas('onMoveCamera', ['dad']);
-		}
-		else
-		{
+		} else {
 			moveCamera(false);
 			callOnLuas('onMoveCamera', ['boyfriend']);
 		}
 	}
 
 	var cameraTwn:FlxTween;
-	public function moveCamera(isDad:Bool, ?direction:String = "")
-	{
+	public function moveCamera(isDad:Bool, ?direction:String = ""){
 		var addX:Float = 0;
 		var addY:Float = 0;
 		if (direction.endsWith("UP")) addY -= ClientPrefs.cameraMoveIntensity;
@@ -3124,14 +3119,7 @@ class PlayState extends MusicBeatState
 			camFollow.y += boyfriend.cameraPosition[1] + boyfriendCameraOffset[1] + addY;
 
 			if (Paths.formatToSongPath(SONG.song) == 'tutorial' && cameraTwn == null && FlxG.camera.zoom != 1)
-			{
-				cameraTwn = FlxTween.tween(FlxG.camera, {zoom: 1}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut, onComplete:
-					function (twn:FlxTween)
-					{
-						cameraTwn = null;
-					}
-				});
-			}
+				cameraTwn = FlxTween.tween(FlxG.camera, {zoom: 1}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut, onComplete: function (twn:FlxTween){cameraTwn = null;}});
 		}
 	}
 
@@ -3156,8 +3144,7 @@ class PlayState extends MusicBeatState
 		// If you have another lyric on the screen
 		if(lyricText != null) {
 			var old:FlxText = cast lyricText;
-			FlxTween.tween(old, {alpha: 0}, 0.2, {onComplete: function(twn:FlxTween)
-			{
+			FlxTween.tween(old, {alpha: 0}, 0.2, {onComplete: function(twn:FlxTween) {
 				remove(old);
 				old.destroy();
 			}});
@@ -3170,7 +3157,7 @@ class PlayState extends MusicBeatState
 		}
 
 		// Lyrics code!!!111
-		if(text.trim() != '' && duration > 0 && color.alphaFloat > 0){
+		if(text.trim() != '' && duration > 0 && color.alphaFloat > 0) {
 			lyricText = new FlxText(0, 0, FlxG.width, text);
 			lyricText.setFormat(Paths.font("pixel.otf"), 24, color, CENTER, OUTLINE, FlxColor.BLACK);
 			lyricText.alpha = 0;
@@ -3193,14 +3180,10 @@ class PlayState extends MusicBeatState
 	function tweentext() {
 		FlxTween.tween(textthingies, {y: 400}, 0.5, {ease: FlxEase.elasticOut});
 		// tween away
-		new FlxTimer().start(3, function(tmr:FlxTimer)
-		{
+		new FlxTimer().start(3, function(tmr:FlxTimer) {
 			FlxTween.tween(textthingies, {y: 1000}, 1, {ease: FlxEase.circIn});
 			// remove text
-			new FlxTimer().start(1, function(tmr:FlxTimer)
-			{
-				remove(textthingies);
-			});
+			new FlxTimer().start(1, function(tmr:FlxTimer) { remove(textthingies); });
 		});
 	}
 
@@ -3239,10 +3222,8 @@ class PlayState extends MusicBeatState
 	}
 
 	//Any way to do this without using a different function? kinda dumb
-	private function onSongComplete()
-	{
-		finishSong(false);
-	}
+	private function onSongComplete() finishSong(false);
+	
 	public function finishSong(?ignoreNoteOffset:Bool = false):Void
 	{
 		var finishCallback:Void->Void = endSong; //In case you want to change it in a specific song.
