@@ -2986,9 +2986,9 @@ class PlayState extends MusicBeatState
 				if (value1 == 'true' && value1 != 'false' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {
 						FlxTween.tween(playerStrums.members[0], {x: 410}, 0.6, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.65, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.7, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.75, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.7, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.8, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.9, {ease: FlxEase.sineOut});
 					}
 					opponentStrums.forEach(function(spr:FlxSprite)
 					{
@@ -3000,9 +3000,9 @@ class PlayState extends MusicBeatState
 						playerStrums.forEach(function(spr:FlxSprite)
 						{
 							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.1, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.12, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.15, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.18, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.15, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.2, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.25, {ease: FlxEase.sineOut});
 						});
 						opponentStrums.forEach(function(spr:FlxSprite)
 						{
