@@ -13,16 +13,11 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
-#if MODS_ALLOWED
-import sys.FileSystem;
-import sys.io.File;
-#end
 import lime.utils.Assets;
 
 using StringTools;
 
-class CreditsFrostState extends MusicBeatState
-{
+class CreditsFrostState extends MusicBeatState {
 	var curSelected:Int = -1;
 
 	private var grpOptions:FlxTypedGroup<Alphabet>;
@@ -54,8 +49,7 @@ class CreditsFrostState extends MusicBeatState
 
 		//REAL
 		var FrostCreditsReal:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['The Developer Team'],
-			['Xarbros', 'spetrorecter', 'Director, Artist', 'https://www.youtube.com/channel/UCepuPlRZnRp7eExtkozDDgA', '7F3300'],
+			['Xarbros', 'spetrorecter', 'Director, Artist', 'https://www.youtube.com/channel/UCepuPlRZnRp7eExtkozDDgA', '082173'],
 			['Floffelo', 'floffelo', 'Charter, Chromatic for Frostbite (FS), Programmer', 'https://www.youtube.com/channel/UCMZy4stSxj3OjWlT0efDSWA', 'C16BFF'],
 			['Liric54', 'liric', 'Musician, Charter', 'https://twitter.com/liric54', 'FFE28C'],
 			['AD3.', 'ad3', 'Musician, Charter, Chromatics for many Characters from the Mod', 'https://twitter.com/alejandrougames', 'C16BFF'],
@@ -67,8 +61,7 @@ class CreditsFrostState extends MusicBeatState
 			['Azaria', 'azaria', 'Musician', 'https://www.youtube.com/channel/UC5jj1CMTlCXFMlkwy_JYEyA/videos', '5751FF'],
 			['Korv', 'korv', 'Musician', 'https://www.youtube.com/channel/UCtFPl-mDVoINooCR-KMySBw', 'FF0A2A'],
 			['JPR', 'jpr', "Musician", 'https://www.youtube.com/channel/UCW4ISpzbmHPh97JN87Xsq_w', '7F3300'],
-			['Shyllis', 'reel', 'Coder, Musician, ', 'https://shyllis.carrd.co/', 'FF3852'],
-			['Dropingo', 'dropingo', "Artist", 'https://www.youtube.com/channel/UC_nh-Jeu9htSPONQPusMEKw/featured', '1900FF'],
+			['Shyllis', 'reel', 'Coder, Musician, Charter', 'https://shyllis.carrd.co/', 'FF3852'],
 			['Fox', 'FOX', 'Musician, Artist, Voice Actor for Frostbite, Blaze and many more!', 'https://www.youtube.com/channel/UCHr0p_VPdEiaMmvTndXVt1Q', '3FC5FF'],
 			['Osward', 'osward', 'Artist', 'https://www.youtube.com/channel/UCufHUTDGvLgK1fcjEW94EeA', '808080'],
 			['Stamp', 'stamp', 'Musician, Artist', 'https://www.youtube.com/channel/UCDilkyn-MId2_HKiwqBcDHg', 'FFA042'],
@@ -76,11 +69,8 @@ class CreditsFrostState extends MusicBeatState
 			['TeapotMann', 'teapot', 'Artist', 'https://twitter.com/TeapotMann', 'FF3852'],
 			['Volcatic', 'volcatic', 'Artist', 'https://volcatic.carrd.co/', '7F3300'],
 			['Wave728', 'wave', 'Artist', 'https://mobile.twitter.com/therealwave728', '7F3300'],
-			['F0x', 'FOX', 'Musician, Artist, Voice Actor', 'https://www.youtube.com/channel/UCHr0p_VPdEiaMmvTndXVt1Q', '3FC5FF'],
-			['CherryCY', 'cherry', "Musician", 'https://cherrycy82.carrd.co/', 'FF3852'],
-			['Contributors'],
-			['Jemsoon', 'jemsoon', 'Discord Server Icon Artist', 'https://twitter.com/jemsoon', 'C0C0C0'],
-			['Sergeant_Spyro', '', 'Week 2 Promo Artist', 'https://twitter.com/Sergeant_Spyro', 'C16BFF']
+			['Milo', 'milo', 'Artist', 'https://mmccrafter.carrd.co/', 'F52A2A'],
+			['CherryCY', 'cherry', "Musician", 'https://cherrycy82.carrd.co/', 'FF3852']
 		];
 		
 		// POG
@@ -145,75 +135,57 @@ class CreditsFrostState extends MusicBeatState
 
 	var quitting:Bool = false;
 	var holdTime:Float = 0;
-	override function update(elapsed:Float)
-	{
+	override function update(elapsed:Float) {
 		if (FlxG.sound.music.volume < 0.7)
-		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
-		}
 
-		if(!quitting)
-		{
-			if(creditsStuff.length > 1)
-			{
+		if(!quitting) {
+			if(creditsStuff.length > 1) {
 				var shiftMult:Int = 1;
 				if(FlxG.keys.pressed.SHIFT) shiftMult = 3;
 
 				var upP = controls.UI_UP_P;
 				var downP = controls.UI_DOWN_P;
 
-				if (upP)
-				{
+				if (upP) {
 					changeSelection(-1 * shiftMult);
 					holdTime = 0;
 				}
-				if (downP)
-				{
+				if (downP) {
 					changeSelection(1 * shiftMult);
 					holdTime = 0;
 				}
 
-				if(controls.UI_DOWN || controls.UI_UP)
-				{
+				if(controls.UI_DOWN || controls.UI_UP) {
 					var checkLastHold:Int = Math.floor((holdTime - 0.5) * 10);
 					holdTime += elapsed;
 					var checkNewHold:Int = Math.floor((holdTime - 0.5) * 10);
 
 					if(holdTime > 0.5 && checkNewHold - checkLastHold > 0)
-					{
 						changeSelection((checkNewHold - checkLastHold) * (controls.UI_UP ? -shiftMult : shiftMult));
-					}
 				}
 			}
 
-			if(controls.ACCEPT && (creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4)) {
+			if(controls.ACCEPT && (creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4))
 				CoolUtil.browserLoad(creditsStuff[curSelected][3]);
-			}
-			if (controls.BACK)
-			{
-				if(colorTween != null) {
+			if (controls.BACK) {
+				if(colorTween != null)
 					colorTween.cancel();
-				}
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new CreditsSelectState());
 				quitting = true;
 			}
 		}
 		
-		for (item in grpOptions.members)
-		{
-			if(!item.isBold)
-			{
+		for (item in grpOptions.members) {
+			if(!item.isBold) {
 				var lerpVal:Float = CoolUtil.boundTo(elapsed * 12, 0, 1);
-				if(item.targetY == 0)
-				{
+				if(item.targetY == 0) {
 					var lastX:Float = item.x;
 					item.screenCenter(X);
 					item.x = FlxMath.lerp(lastX, item.x - 70, lerpVal);
 					item.forceX = item.x;
-				}
-				else
-				{
+				} else {
 					item.x = FlxMath.lerp(item.x, 200 + -40 * Math.abs(item.targetY), lerpVal);
 					item.forceX = item.x;
 				}
@@ -236,9 +208,8 @@ class CreditsFrostState extends MusicBeatState
 
 		var newColor:Int =  getCurrentBGColor();
 		if(newColor != intendedColor) {
-			if(colorTween != null) {
+			if(colorTween != null)
 				colorTween.cancel();
-			}
 			intendedColor = newColor;
 			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
 				onComplete: function(twn:FlxTween) {
@@ -249,8 +220,7 @@ class CreditsFrostState extends MusicBeatState
 
 		var bullShit:Int = 0;
 
-		for (item in grpOptions.members)
-		{
+		for (item in grpOptions.members) {
 			item.targetY = bullShit - curSelected;
 			bullShit++;
 
