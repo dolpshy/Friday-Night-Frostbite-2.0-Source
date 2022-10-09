@@ -1,11 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="logoBumpin.png">
 <SubTexture name="bump0000" x="0" y="0" width="577" height="489" frameX="-86" frameY="0" frameWidth="752" frameHeight="489" />
+<SubTexture name="bump0001" x="0" y="0" width="577" height="489" frameX="-86" frameY="0" frameWidth="752" frameHeight="489" />
 <SubTexture name="bump0001" x="577" y="0" width="557" height="480" frameX="-96" frameY="-8" frameWidth="752" frameHeight="489" />
 <SubTexture name="bump0002" x="0" y="489" width="536" height="462" frameX="-107" frameY="-17" frameWidth="752" frameHeight="489" />
 <SubTexture name="bump0003" x="536" y="489" width="501" height="432" frameX="-124" frameY="-32" frameWidth="752" frameHeight="489" />
-<SubTexture name="bump0004" x="536" y="489" width="501" height="432" frameX="-124" frameY="-32" frameWidth="752" frameHeight="489" />
-<SubTexture name="bump0005" x="0" y="489" width="536" height="462" frameX="-107" frameY="-17" frameWidth="752" frameHeight="489" />
-<SubTexture name="bump0006" x="577" y="0" width="557" height="480" frameX="-96" frameY="-8" frameWidth="752" frameHeight="489" />
-<SubTexture name="bump0007" x="0" y="0" width="577" height="489" frameX="-86" frameY="0" frameWidth="752" frameHeight="489" />
 </TextureAtlas>
