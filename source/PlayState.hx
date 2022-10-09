@@ -661,7 +661,7 @@ class PlayState extends MusicBeatState
 				var darkalleyway:BGSprite = new BGSprite('dark_alleyway', -600, -360, 0.9, 0.9);
 				add(darkalleyway);
 			case 'dark_winter':
-				var darkwinter:BGSprite = new BGSprite('dark_winter', -760, -280, 0.9, 0.9);
+				var darkwinter:BGSprite = new BGSprite('dark_winter', -740, -280, 0.9, 0.9);
 				darkwinter.setGraphicSize(Std.int(darkwinter.width * 1.1));
 				add(darkwinter);
 			case 'erect_somethingfunni':
@@ -2358,6 +2358,7 @@ class PlayState extends MusicBeatState
 
 		if (vignette == null) {
 			vignette = new FlxSprite().loadGraphic(Paths.image('vignette'));
+			vignette.setGraphicSize(Std.int(vignette.width * 1.05));
 			vignette.cameras = [camHUD];
 			add(vignette);
 		}
@@ -2923,14 +2924,10 @@ class PlayState extends MusicBeatState
 						setOnLuas('dadName', dad.curCharacter);
 
 					case 2:
-						if(gf != null)
-						{
-							if(gf.curCharacter != value2)
-							{
+						if(gf != null) {
+							if(gf.curCharacter != value2) {
 								if(!gfMap.exists(value2))
-								{
 									addCharacterToList(value2, charType);
-								}
 
 								var lastAlpha:Float = gf.alpha;
 								gf.alpha = 0.00001;
@@ -2943,8 +2940,7 @@ class PlayState extends MusicBeatState
 				reloadHealthBarColors();
 
 			case 'Change Scroll Speed':
-				if (songSpeedType == "constant")
-					return;
+				if (songSpeedType == "constant") return;
 				var val1:Float = Std.parseFloat(value1);
 				var val2:Float = Std.parseFloat(value2);
 				if(Math.isNaN(val1)) val1 = 1;
@@ -2954,14 +2950,9 @@ class PlayState extends MusicBeatState
 
 				songSpeedBonus = (songSpeed + newValue) / 2;
 				if(val2 <= 0)
-				{
 					songSpeed = newValue;
-				}
-				else
-				{
-					songSpeedTween = FlxTween.tween(this, {songSpeed: newValue}, val2, {ease: FlxEase.linear, onComplete:
-						function (twn:FlxTween)
-						{
+				else {
+					songSpeedTween = FlxTween.tween(this, {songSpeed: newValue}, val2, {ease: FlxEase.linear, onComplete: function (twn:FlxTween) {
 							songSpeedTween = null;
 						}
 					});
@@ -2985,32 +2976,30 @@ class PlayState extends MusicBeatState
 			case 'Change To Middle Scroll':
 				if (value1 == 'true' && value1 != 'false' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {
-						FlxTween.tween(playerStrums.members[0], {x: 415}, 0.5, {ease: FlxEase.cubeInOut});
-						FlxTween.tween(playerStrums.members[1], {x: 527}, 0.6, {ease: FlxEase.cubeInOut});
-						FlxTween.tween(playerStrums.members[2], {x: 638}, 0.7, {ease: FlxEase.cubeInOut});
-						FlxTween.tween(playerStrums.members[3], {x: 750}, 0.8, {ease: FlxEase.cubeInOut});
+						playerStrums.forEach(function(spr:FlxSprite) {
+							FlxTween.tween(playerStrums.members[0], {x: 415}, 0.5, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[1], {x: 527}, 0.6, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[2], {x: 638}, 0.7, {ease: FlxEase.cubeInOut});
+							FlxTween.tween(playerStrums.members[3], {x: 750}, 0.8, {ease: FlxEase.cubeInOut});
+						});
 					}
-					opponentStrums.forEach(function(spr:FlxSprite)
-					{
-						FlxTween.tween(spr, {alpha: 0}, 0.5, {ease: FlxEase.sineOut});
+					opponentStrums.forEach(function(spr:FlxSprite) {
+						FlxTween.tween(spr, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
 					});
 					alreadyMS = true;
 				} else {
 					if (!ClientPrefs.middleScroll) {
-						playerStrums.forEach(function(spr:FlxSprite)
-						{
+						playerStrums.forEach(function(spr:FlxSprite) {
 							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.5, {ease: FlxEase.cubeInOut});
 							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.6, {ease: FlxEase.cubeInOut});
 							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.7, {ease: FlxEase.cubeInOut});
 							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.8, {ease: FlxEase.cubeInOut});
 						});
-						opponentStrums.forEach(function(spr:FlxSprite)
-						{
+						opponentStrums.forEach(function(spr:FlxSprite) {
 							FlxTween.tween(spr, {alpha: 1}, 0.6, {ease: FlxEase.sineIn});
 						});
 					} else {
-						opponentStrums.forEach(function(spr:FlxSprite)
-						{
+						opponentStrums.forEach(function(spr:FlxSprite) {
 							FlxTween.tween(spr, {alpha: 0.35}, 0.6, {ease: FlxEase.sineIn});
 						});
 					}
@@ -3019,14 +3008,12 @@ class PlayState extends MusicBeatState
 
 			case 'Player Note Visible':
 				if (value1 != 'true' && value1 == 'false' && !alreadyPN) {
-					playerStrums.forEach(function(spr:FlxSprite)
-					{
+					playerStrums.forEach(function(spr:FlxSprite) {
 						FlxTween.tween(spr, {alpha: 0}, 0.5, {ease: FlxEase.sineOut});
 					});
 					alreadyPN = true;
 				} else {
-					playerStrums.forEach(function(spr:FlxSprite)
-					{
+					playerStrums.forEach(function(spr:FlxSprite) {
 						FlxTween.tween(spr, {alpha: 1}, 0.1, {ease: FlxEase.sineIn});
 					});
 					alreadyPN = false;
@@ -3034,14 +3021,12 @@ class PlayState extends MusicBeatState
 
 			case 'Opponent Note Visible':
 				if (value1 != 'true' && value1 == 'false' && !alreadyON) {
-					opponentStrums.forEach(function(spr:FlxSprite)
-					{
+					opponentStrums.forEach(function(spr:FlxSprite) {
 						FlxTween.tween(spr, {alpha: 0}, 0.5, {ease: FlxEase.sineOut});
 					});
 					alreadyON = true;
 				} else {
-					opponentStrums.forEach(function(spr:FlxSprite)
-					{
+					opponentStrums.forEach(function(spr:FlxSprite) {
 						FlxTween.tween(spr, {alpha: 1}, 0.1, {ease: FlxEase.sineIn});
 					});
 					alreadyON = false;
@@ -3124,55 +3109,64 @@ class PlayState extends MusicBeatState
 
 	var alreadyCB:Bool = false;
 	function cinematicBars(appear:Bool) {
-		if (appear && !alreadyCB)
-		{
+		if (appear && !alreadyCB) {
+			FlxTween.tween(ratingTxt, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(accuracyTxt, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(missesTxt, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(scoreText, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(healthBarBG, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(healthBar, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(iconP1, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(iconP2, {alpha: 0}, 0.6, {ease: FlxEase.sineOut});
+			
 			add(topBar);
 			add(bottomBar);
+
 			if (!ClientPrefs.downScroll) {
-				playerStrums.forEach(function(spr:FlxSprite)
-				{
+				playerStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 120}, 1, {ease: FlxEase.sineOut});
 				});
-				opponentStrums.forEach(function(spr:FlxSprite)
-				{
+				opponentStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 120}, 1, {ease: FlxEase.sineOut});
 				});
 			} else {
-				playerStrums.forEach(function(spr:FlxSprite)
-				{
+				playerStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 480}, 1, {ease: FlxEase.sineOut});
 				});
-				opponentStrums.forEach(function(spr:FlxSprite)
-				{
+				opponentStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 480}, 1, {ease: FlxEase.sineOut});
 				});
 			}
 			FlxTween.tween(topBar, {y: 0}, 1, {ease: FlxEase.quadOut});
 			FlxTween.tween(bottomBar, {y: 600}, 1, {ease: FlxEase.quadOut});
 			alreadyCB = true;
-		} else {
+		} else {			
+			FlxTween.tween(ratingTxt, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(accuracyTxt, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(missesTxt, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(scoreText, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(healthBarBG, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(healthBar, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(iconP1, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+			FlxTween.tween(iconP2, {alpha: 1}, 0.6, {ease: FlxEase.sineOut});
+
 			if (!ClientPrefs.downScroll) {
-				playerStrums.forEach(function(spr:FlxSprite)
-				{
+				playerStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 50}, 1, {ease: FlxEase.sineOut});
 				});
-				opponentStrums.forEach(function(spr:FlxSprite)
-				{
+				opponentStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 50}, 1, {ease: FlxEase.sineOut});
 				});
 			} else {
-				playerStrums.forEach(function(spr:FlxSprite)
-				{
+				playerStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 570}, 1, {ease: FlxEase.sineOut});
 				});
-				opponentStrums.forEach(function(spr:FlxSprite)
-				{
+				opponentStrums.forEach(function(spr:FlxSprite) {
 					FlxTween.tween(spr, {y: 570}, 1, {ease: FlxEase.sineOut});
 				});
 			}
 			FlxTween.tween(topBar, {y: -170}, 1, {ease: FlxEase.quadOut});
-			FlxTween.tween(bottomBar, {y: 720}, 1, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
-			{
+			FlxTween.tween(bottomBar, {y: 720}, 1, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween) {
 				remove(topBar);
 				remove(bottomBar);
 			}});
@@ -3201,10 +3195,11 @@ class PlayState extends MusicBeatState
 		// Lyrics code!!!111
 		if(text.trim() != '' && duration > 0 && color.alphaFloat > 0) {
 			lyricText = new FlxText(0, 0, FlxG.width, text);
-			lyricText.setFormat(Paths.font("pixel.otf"), 24, color, CENTER, OUTLINE, FlxColor.BLACK);
+			lyricText.setFormat(Paths.font("vcr.ttf"), 24, color, CENTER, OUTLINE, FlxColor.BLACK);
+			lyricText.borderSize = 6;
 			lyricText.alpha = 0;
 			lyricText.screenCenter();
-			lyricText.y += 225;
+			lyricText.y += 275;
 			lyricText.cameras = [camOther];
 			add(lyricText);
 
