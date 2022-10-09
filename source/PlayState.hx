@@ -2985,10 +2985,10 @@ class PlayState extends MusicBeatState
 			case 'Change To Middle Scroll':
 				if (value1 == 'true' && value1 != 'false' && !alreadyMS) {
 					if (!ClientPrefs.middleScroll) {
-						FlxTween.tween(playerStrums.members[0], {x: 410}, 0.6, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.7, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.8, {ease: FlxEase.sineOut});
-						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.9, {ease: FlxEase.sineOut});
+						FlxTween.tween(playerStrums.members[0], {x: 410}, 0.5, {ease: FlxEase.cubeinOut});
+						FlxTween.tween(playerStrums.members[1], {x: 522}, 0.6, {ease: FlxEase.cubeinOut});
+						FlxTween.tween(playerStrums.members[2], {x: 633}, 0.7, {ease: FlxEase.cubeinOut});
+						FlxTween.tween(playerStrums.members[3], {x: 745}, 0.8, {ease: FlxEase.cubeinOut});
 					}
 					opponentStrums.forEach(function(spr:FlxSprite)
 					{
@@ -2999,10 +2999,10 @@ class PlayState extends MusicBeatState
 					if (!ClientPrefs.middleScroll) {
 						playerStrums.forEach(function(spr:FlxSprite)
 						{
-							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.1, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.15, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.2, {ease: FlxEase.sineOut});
-							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.25, {ease: FlxEase.sineOut});
+							FlxTween.tween(playerStrums.members[0], {x: 740}, 0.5, {ease: FlxEase.cubeinOut});
+							FlxTween.tween(playerStrums.members[1], {x: 852}, 0.6, {ease: FlxEase.cubeinOut});
+							FlxTween.tween(playerStrums.members[2], {x: 963}, 0.7, {ease: FlxEase.cubeinOut});
+							FlxTween.tween(playerStrums.members[3], {x: 1075}, 0.8, {ease: FlxEase.cubeinOut});
 						});
 						opponentStrums.forEach(function(spr:FlxSprite)
 						{
@@ -3131,47 +3131,47 @@ class PlayState extends MusicBeatState
 			if (!ClientPrefs.downScroll) {
 				playerStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 120}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 120}, 1, {ease: FlxEase.sineOut});
 				});
 				opponentStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 120}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 120}, 1, {ease: FlxEase.sineOut});
 				});
 			} else {
 				playerStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 480}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 480}, 1, {ease: FlxEase.sineOut});
 				});
 				opponentStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 480}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 480}, 1, {ease: FlxEase.sineOut});
 				});
 			}
-			FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
-			FlxTween.tween(bottomBar, {y: 600}, 0.5, {ease: FlxEase.quadOut});
+			FlxTween.tween(topBar, {y: 0}, 1, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 600}, 1, {ease: FlxEase.quadOut});
 			alreadyCB = true;
 		} else {
 			if (!ClientPrefs.downScroll) {
 				playerStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 50}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 50}, 1, {ease: FlxEase.sineOut});
 				});
 				opponentStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 50}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 50}, 1, {ease: FlxEase.sineOut});
 				});
 			} else {
 				playerStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 570}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 570}, 1, {ease: FlxEase.sineOut});
 				});
 				opponentStrums.forEach(function(spr:FlxSprite)
 				{
-					FlxTween.tween(spr, {y: 570}, 0.5, {ease: FlxEase.sineOut});
+					FlxTween.tween(spr, {y: 570}, 1, {ease: FlxEase.sineOut});
 				});
 			}
-			FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
-			FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
+			FlxTween.tween(topBar, {y: -170}, 1, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 720}, 1, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
 			{
 				remove(topBar);
 				remove(bottomBar);

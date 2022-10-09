@@ -68,7 +68,6 @@ class ChartingState extends MusicBeatState
 		'No Animation',
 		'Bullet_Note'
 	];
-	public var huhhuh:Bool = false;
 	private var noteTypeIntMap:Map<Int, String> = new Map<Int, String>();
 	private var noteTypeMap:Map<String, Null<Int>> = new Map<String, Null<Int>>();
 	public var isErect:Bool = PlayState.SONG.isErect;
@@ -231,10 +230,6 @@ class ChartingState extends MusicBeatState
 			addSection();
 			PlayState.SONG = _song;
 		}
-
-		// Erect song!!!
-		if (check_isErect != null && check_isErect.checked)
-			huhhuh = true;
 		
 		// Paths.clearMemory();
 
@@ -1360,7 +1355,7 @@ class ChartingState extends MusicBeatState
 		}
 
 		var file:Dynamic;
-		if (huhhuh)
+		if (check_isErect != null && check_isErect.checked)
 			file = Paths.voiceserect(currentSongName);
 		else
 			file = Paths.voices(currentSongName);
@@ -1376,7 +1371,7 @@ class ChartingState extends MusicBeatState
 	}
 
 	function generateSong() {
-		if (huhhuh)
+		if (check_isErect != null && check_isErect.checked)
 			FlxG.sound.playMusic(Paths.insterect(currentSongName), 0.6);
 		else
 			FlxG.sound.playMusic(Paths.inst(currentSongName), 0.6);
