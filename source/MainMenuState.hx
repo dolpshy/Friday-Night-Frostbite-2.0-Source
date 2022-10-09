@@ -1,3 +1,5 @@
+// THE COOL MENU CODE !!11!
+
 package;
 
 #if desktop
@@ -41,12 +43,12 @@ class MainMenuState extends MusicBeatState
 		'sound_test'
 	];
 
-	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 	var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBGBlue'));
-	var corners:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('menuCorners'));
+	var magenta:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+	var corners:FlxSprite = new FlxSprite(0, -400).loadGraphic(Paths.image('menuCorners'));
 
 	public var daChoice:String;
 
@@ -85,7 +87,6 @@ class MainMenuState extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
@@ -94,26 +95,20 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		add(magenta);
 		
-		corners.scrollFactor.set(0, 0);
-		corners.setGraphicSize(Std.int(corners.width * 1));
+		corners.scrollFactor.set(0, yScroll + 0.2);
 		corners.updateHitbox();
 		corners.screenCenter();
 		corners.antialiasing = ClientPrefs.globalAntialiasing;
 		add(corners);
-		
-		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
 		var scale:Float = 0.6;
-		/*if(optionShit.length > 6) {
-			scale = 6 / optionShit.length;
-		}*/
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 125 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var offset:Float = 115 - (Math.max(optionShit.length, 4) - 4) * 80;
 			var menuItem:FlxSprite = new FlxSprite(0, (i * 220) + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
@@ -127,9 +122,10 @@ class MainMenuState extends MusicBeatState
 			if(optionShit.length < 6) scr = 0;
 			menuItem.scrollFactor.set(0, scr);
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
 
+			// god i love trampolining
+			// !!!!!
 			switch (i)
 			{
 				case 0:
@@ -144,20 +140,20 @@ class MainMenuState extends MusicBeatState
 					menuItem.y += 20;
 				case 3:
 					menuItem.screenCenter(X);
-					menuItem.x += 470;
-					menuItem.y -= 400;
-					menuItem.scale.x = scale - 0.15;
-					menuItem.scale.y = scale - 0.15;
+					menuItem.x += 425;
+					menuItem.y -= 330;
+					menuItem.scale.x = scale - 0.1;
+					menuItem.scale.y = scale - 0.1;
 				case 4:
 					menuItem.screenCenter(X);
-					menuItem.x += 390;
-					menuItem.y -= 425;
+					menuItem.x += 355;
+					menuItem.y -= 350;
 					menuItem.scale.x = scale - 0.1;
 					menuItem.scale.y = scale - 0.1;
 				case 5:
 					menuItem.screenCenter(X);
-					menuItem.x += 380;
-					menuItem.y -= 425;
+					menuItem.x += 150;
+					menuItem.y -= 370;
 					menuItem.scale.x = scale - 0.1;
 					menuItem.scale.y = scale - 0.1;
 			}
@@ -240,8 +236,10 @@ class MainMenuState extends MusicBeatState
 						FlxTween.tween(FlxG.camera, {zoom: 5}, 0.7, {ease: FlxEase.expoIn});
 						FlxTween.tween(bg, {angle: 45}, 0.7, {ease: FlxEase.expoIn});
 						FlxTween.tween(magenta, {angle: 45}, 0.7, {ease: FlxEase.expoIn});
+						FlxTween.tween(corners, {angle: 45}, 0.7, {ease: FlxEase.expoIn});
 						FlxTween.tween(bg, {alpha: 0}, 0.7, {ease: FlxEase.expoIn});
 						FlxTween.tween(magenta, {alpha: 0}, 0.7, {ease: FlxEase.expoIn});
+						FlxTween.tween(corners, {alpha: 0}, 0.7, {ease: FlxEase.expoIn});
 					}
 					else
 					{
