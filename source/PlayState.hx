@@ -173,11 +173,11 @@ class PlayState extends MusicBeatState
 	#end
 
 	// Cinematic Bars Event!!!
-	var topBar:FlxSprite;
-	var bottomBar:FlxSprite;
+	public var topBar:FlxSprite;
+	public var bottomBar:FlxSprite;
 	
 	// Flashy Bars Event!!!1!!
-	var flashyWashy:FlxSprite;
+	public var flashyWashy:FlxSprite;
 
 	public var BF_X:Float = 770;
 	public var BF_Y:Float = 100;
@@ -202,9 +202,9 @@ class PlayState extends MusicBeatState
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
-	var creditsText:FlxTypedGroup<FlxText>;
-	var creditsTxt:FlxText;
-	var box:FlxSprite; 
+	public var creditsText:FlxTypedGroup<FlxText>;
+	public var creditsTxt:FlxText;
+	public var box:FlxSprite; 
 
 	public var spawnTime:Float = 2000;
 
@@ -429,9 +429,6 @@ class PlayState extends MusicBeatState
 		} 
 		// TheReel REALLY SUCKS as coder
 
-		topBar = new FlxSprite(0, -170).makeGraphic(1280, 170, FlxColor.BLACK);
-		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 170, FlxColor.BLACK);
-
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
 
@@ -441,6 +438,9 @@ class PlayState extends MusicBeatState
 		debugKeysChart = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
 		debugKeysCharacter = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_2'));
 		PauseSubState.songName = null; //Reset to default
+
+		topBar = new FlxSprite(0, -170).makeGraphic(1280, 120, FlxColor.BLACK);
+		bottomBar = new FlxSprite(0, 720).makeGraphic(1280, 120, FlxColor.BLACK);
 
 		keysArray = [
 			ClientPrefs.copyKey(ClientPrefs.keyBinds.get('note_left')),
@@ -2976,7 +2976,7 @@ class PlayState extends MusicBeatState
 				}
 
 			// NEW EVENTS STARTS HERE!!!!
-			case 'Change Default CamZoom':
+			case 'Change Cam Zoom':
 				var val1:Float = Std.parseFloat(value1);
 				if (val1 == 0)
 					defaultCamZoom = stageData.defaultZoom;
@@ -3048,7 +3048,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Cinematic Bars':
-				if (value1 == 'true')
+				if (value1 == 'true' && value1 != 'false')
 					cinematicBars(true);
 				else
 					cinematicBars(false);
@@ -3128,10 +3128,48 @@ class PlayState extends MusicBeatState
 		{
 			add(topBar);
 			add(bottomBar);
+			if (!ClientPrefs.downScroll) {
+				playerStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 120}, 0.5, {ease: FlxEase.sineOut});
+				});
+				opponentStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 120}, 0.5, {ease: FlxEase.sineOut});
+				});
+			} else {
+				playerStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 480}, 0.5, {ease: FlxEase.sineOut});
+				});
+				opponentStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 480}, 0.5, {ease: FlxEase.sineOut});
+				});
+			}
 			FlxTween.tween(topBar, {y: 0}, 0.5, {ease: FlxEase.quadOut});
-			FlxTween.tween(bottomBar, {y: 550}, 0.5, {ease: FlxEase.quadOut});
+			FlxTween.tween(bottomBar, {y: 600}, 0.5, {ease: FlxEase.quadOut});
 			alreadyCB = true;
 		} else {
+			if (!ClientPrefs.downScroll) {
+				playerStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 50}, 0.5, {ease: FlxEase.sineOut});
+				});
+				opponentStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 50}, 0.5, {ease: FlxEase.sineOut});
+				});
+			} else {
+				playerStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 570}, 0.5, {ease: FlxEase.sineOut});
+				});
+				opponentStrums.forEach(function(spr:FlxSprite)
+				{
+					FlxTween.tween(spr, {y: 570}, 0.5, {ease: FlxEase.sineOut});
+				});
+			}
 			FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
 			FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
 			{
