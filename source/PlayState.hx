@@ -3144,7 +3144,7 @@ class PlayState extends MusicBeatState
 				alreadyCB = true;
 			} else {
 				FlxTween.tween(topBar, {y: -170}, 0.5, {ease: FlxEase.quadOut});
-				FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut, onComplete: function(fuckme:FlxTween)
+				FlxTween.tween(bottomBar, {y: 720}, 0.5, {ease: FlxEase.quadOut});
 				
 				alreadyCB = false;
 			}
