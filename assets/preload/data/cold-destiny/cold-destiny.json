@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bffrosty",
-		"player2": "subzero",
+		"player2": "subby",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -8313,10 +8313,10 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gffrosty",
+		"gfVersion": "gf-christmas",
 		"events": [],
 		"player3": null,
-		"song": "Cold Destiny",
+		"song": "cold destiny",
 		"stage": "alleyway",
 		"validScore": true,
 		"needsVoices": true,
