@@ -55,7 +55,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 		
-		var option:Option = new Option('Show Funny Textes',
+		var option:Option = new Option('Show Funny Texts',
 			'If checked, shows random textes at the song beginning and on the gameover.',
 			'funnitext',
 			'bool',

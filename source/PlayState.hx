@@ -508,6 +508,10 @@ class PlayState extends MusicBeatState
 		opponentPlay = ClientPrefs.getGameplaySetting('opponentplay', false);
 		maxHealth = ClientPrefs.getGameplaySetting('maxhealth', 1) * 2.0;
 		health = ClientPrefs.getGameplaySetting('startinghealth', 0.5) * 2.0;
+		
+		//so true
+		if (curSong == 'Iceberg')
+			skipCountdown = true;
 
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
@@ -547,17 +551,11 @@ class PlayState extends MusicBeatState
 
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
 		if (isStoryMode)
-		{
 			detailsText = "Story Mode: " + WeekData.getCurrentWeek().weekName;
-		}
 		else if (isCodes)
-		{
 			detailsText = "Codes Song";
-		}
 		else
-		{
 			detailsText = "Freeplay";
-		}
 
 		// String for when the game is paused
 		detailsPausedText = "Paused - " + detailsText;
@@ -811,10 +809,6 @@ class PlayState extends MusicBeatState
 		
 		flashyWashy.cameras = [camHUD];
 		flashyWashy.screenCenter();
-
-		//so true
-		if (curSong == 'iceberg')
-			skipCountdown = true;
 
 		var gfVersion:String = SONG.gfVersion;
 		if(gfVersion == null || gfVersion.length < 1)
@@ -3310,7 +3304,16 @@ class PlayState extends MusicBeatState
 		seenCutscene = false;
 
 		#if ACHIEVEMENTS_ALLOWED
-		achievementBalls();
+		if(achievementObj != null) {
+			return;
+		} else {
+			var achieve:String = checkForAchievement(['getting_started', 'dehydrated', 'fell_off', 'the_one_singing', 'astral_snowstorm_nomiss', 'icy_encounter', 'alleyway', 'familiar_hero', 'sussy', 'bad_aim', 'skill_issue', 'rising_star']);
+
+			if(achieve != null) {
+				startAchievement(achieve);
+				return;
+			}
+		}
 		#end
 
 		var ret:Dynamic = callOnLuas('onEndSong', [], false);
@@ -3430,18 +3433,6 @@ class PlayState extends MusicBeatState
 		achievementObj = null;
 		if(endingSong && !inCutscene) {
 			endSong();
-		}
-	}
-	function achievementBalls() {
-		if(achievementObj != null) {
-			return;
-		} else {
-			var achieve:String = checkForAchievement(['getting_started', 'dehydrated', 'fell_off', 'the_one_singing', 'astral_snowstorm_nomiss', 'icy_encounter', 'alleyway', 'familiar_hero', 'sussy', 'bad_aim', 'skill_issue', 'rising_star']);
-
-			if(achieve != null) {
-				startAchievement(achieve);
-				return;
-			}
 		}
 	}
 	#end
