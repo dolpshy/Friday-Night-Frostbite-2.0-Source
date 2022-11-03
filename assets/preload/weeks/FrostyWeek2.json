@@ -2,7 +2,7 @@
 	"storyName": "Rematch in good old frostopia",
 	"difficulties": "EASY, NORMAL, HARD, MANIA",
 	"hideFreeplay": false,
-	"weekBackground": "",
+	"weekBackground": "week2",
 	"freeplayColor": [
 		146,
 		113,
@@ -38,11 +38,6 @@
 				106
 			]
 		]
-	],
-	"weekCharacters": [
-		"",
-		"",
-		""
 	],
 	"hiddenUntilUnlocked": false,
 	"weekName": "FrostyWeek2"

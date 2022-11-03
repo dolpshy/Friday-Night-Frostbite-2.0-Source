@@ -2,7 +2,7 @@
 	"storyName": "dev team shenanigans",
 	"difficulties": "HARD",
 	"hideFreeplay": false,
-	"weekBackground": "kfc",
+	"weekBackground": "devweek",
 	"freeplayColor": [
 		146,
 		113,
@@ -38,11 +38,6 @@
 				53
 			]
 		]
-	],
-	"weekCharacters": [
-		"",
-		"",
-		""
 	],
 	"hiddenUntilUnlocked": false,
 	"weekName": "The Interesting Sussy Sussy"

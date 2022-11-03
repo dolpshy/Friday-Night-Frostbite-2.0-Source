@@ -1,19 +1,14 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "Tsunami real!!!!1!!111111",
 	"difficulties": "WATER, ERECT",
 	"hideFreeplay": false,
-	"weekBackground": "stage",
+	"weekBackground": "",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"songs": [
 		[
 			"Tsunami",
@@ -26,5 +21,5 @@
 		]
 	],
 	"hideStoryMode": true,
-	"weekName": "Custom Week"
+	"weekName": "da water week"
 }

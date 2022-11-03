@@ -155,6 +155,15 @@ class SoundTestMenuState extends MusicBeatState
 			{
 				LoadingState.loadAndSwitchState(new PlayState());
 			});
+        } else if (first == 66 && second == 66) {
+			PlayState.SONG = Song.loadFromJson('hypothermia-hard', 'Hypothermia');
+			PlayState.isCodes = true;
+			PlayState.storyDifficulty = 2;
+			flashshit(true);
+			new FlxTimer().start(2, function(tmr:FlxTimer)
+			{
+				LoadingState.loadAndSwitchState(new PlayState());
+			});
         } else {
 			if (soundCooldown) {
 				soundCooldown = false;
@@ -166,8 +175,7 @@ class SoundTestMenuState extends MusicBeatState
         }
 	}
 		
-	override public function update(elapsed:Float)
-		{
+	override public function update(elapsed:Float) {
 			if (controls.UI_LEFT_P || controls.UI_RIGHT_P) thej = !thej;
 
 			if (controls.UI_DOWN_P) changeNumber(1);

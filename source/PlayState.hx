@@ -371,63 +371,9 @@ class PlayState extends MusicBeatState
 		textthingies = new FlxText(0, 1000, 625, '');
 		creditsTxt = new FlxText(0, 25, 0, '', 24);
 
-		textrandom = FlxG.random.int(1, 26);
+		textrandom = FlxG.random.int(0, 25);
 
-		switch(textrandom) { // again
-			case 1:
-				textthingies.text = myass[0];
-			case 2:
-				textthingies.text = myass[1];
-			case 3:
-				textthingies.text = myass[2];
-			case 4:
-				textthingies.text = myass[3];
-			case 5:
-				textthingies.text = myass[4];
-			case 6:
-				textthingies.text = myass[5];
-			case 7:
-				textthingies.text = myass[6];
-			case 8:
-				textthingies.text = myass[7];
-			case 9:
-				textthingies.text = myass[8];
-			case 10:
-				textthingies.text = myass[9];
-			case 11:
-				textthingies.text = myass[10];
-			case 12:
-				textthingies.text = myass[11];
-			case 13:
-				textthingies.text = myass[12];
-			case 14:
-				textthingies.text = myass[13];
-			case 15:
-				textthingies.text = myass[14];
-			case 16:
-				textthingies.text = myass[15];
-			case 17:
-				textthingies.text = myass[16];
-			case 18:
-				textthingies.text = myass[17];
-			case 19:
-				textthingies.text = myass[18];
-			case 20:
-				textthingies.text = myass[19];
-			case 21:
-				textthingies.text = myass[20];
-			case 22:
-				textthingies.text = myass[21];
-			case 23:
-				textthingies.text = myass[22];
-			case 24:
-				textthingies.text = myass[23];
-			case 25:
-				textthingies.text = myass[24];
-			case 26:
-				textthingies.text = myass[25];
-		} 
-		// TheReel REALLY SUCKS as coder
+		textthingies.text = myass[textrandom];
 
 		Paths.clearStoredMemory();
 		if (ClientPrefs.hideAllSprites) ClientPrefs.lowQuality = true;
@@ -2144,12 +2090,9 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	override function openSubState(SubState:FlxSubState)
-	{
-		if (paused)
-		{
-			if (FlxG.sound.music != null)
-			{
+	override function openSubState(SubState:FlxSubState) {
+		if (paused) {
+			if (FlxG.sound.music != null) {
 				FlxG.sound.music.pause();
 				vocals.pause();
 			}
@@ -2179,14 +2122,9 @@ class PlayState extends MusicBeatState
 		super.openSubState(SubState);
 	}
 
-	override function closeSubState()
-	{
-		if (paused)
-		{
-			if (FlxG.sound.music != null && !startingSong)
-			{
-				resyncVocals();
-			}
+	override function closeSubState() {
+		if (paused) {
+			if (FlxG.sound.music != null && !startingSong) resyncVocals();
 
 			if (startTimer != null && !startTimer.finished)
 				startTimer.active = true;
@@ -2202,73 +2140,49 @@ class PlayState extends MusicBeatState
 				}
 			}
 
-			for (tween in modchartTweens) {
+			for (tween in modchartTweens)
 				tween.active = true;
-			}
-			for (timer in modchartTimers) {
+			for (timer in modchartTimers)
 				timer.active = true;
-			}
 			paused = false;
 			callOnLuas('onResume', []);
 
 			#if desktop
-			if (startTimer != null && startTimer.finished)
-			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
-			}
-			else
-			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-			}
+			if (startTimer != null && startTimer.finished) DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+			else DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 			#end
 		}
 
 		super.closeSubState();
 	}
 
-	override public function onFocus():Void
-	{
+	override public function onFocus():Void {
 		#if desktop
-		if (health > 0 && !paused)
-		{
-			if (Conductor.songPosition > 0.0)
-			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
-			}
-			else
-			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-			}
+		if (health > 0 && !paused) {
+			if (Conductor.songPosition > 0.0) DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+			else DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 		}
 		#end
 
 		super.onFocus();
 	}
 
-	override public function onFocusLost():Void
-	{
+	override public function onFocusLost():Void {
 		#if desktop
-		if (health > 0 && !paused)
-		{
-			DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-		}
+		if (health > 0 && !paused) DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 		#end
 
 		super.onFocusLost();
 	}
 
-	function resyncVocals():Void
-	{
+	function resyncVocals():Void {
 		if(finishTimer != null) return;
 
 		vocals.pause();
 
 		FlxG.sound.music.play();
 		Conductor.songPosition = FlxG.sound.music.time;
-		if (Conductor.songPosition <= vocals.length)
-		{
-			vocals.time = Conductor.songPosition;
-		}
+		if (Conductor.songPosition <= vocals.length) vocals.time = Conductor.songPosition;
 		vocals.play();
 	}
 
@@ -2278,8 +2192,7 @@ class PlayState extends MusicBeatState
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
 
-	override public function update(elapsed:Float)
-	{
+	override public function update(elapsed:Float) {
 		callOnLuas('onUpdate', [elapsed]);
 
 		if(!inCutscene) {
@@ -2287,12 +2200,8 @@ class PlayState extends MusicBeatState
 			camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
 			if(!startingSong && !endingSong && boyfriend.animation.curAnim.name.startsWith('idle')) {
 				boyfriendIdleTime += elapsed;
-				if(boyfriendIdleTime >= 0.15) { // Kind of a mercy thing for making the achievement easier to get as it's apparently frustrating to some playerss
-					boyfriendIdled = true;
-				}
-			} else {
-				boyfriendIdleTime = 0;
-			}
+				if(boyfriendIdleTime >= 0.15) boyfriendIdled = true;
+			} else boyfriendIdleTime = 0;
 		}
 
 		super.update(elapsed);
@@ -2305,16 +2214,12 @@ class PlayState extends MusicBeatState
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
-		if (controls.PAUSE && startedCountdown && canPause)
-		{
+		if (controls.PAUSE && startedCountdown && canPause) {
 			var ret:Dynamic = callOnLuas('onPause', [], false);
-			if(ret != FunkinLua.Function_Stop) {
-				openPauseMenu();
-			}
+			if(ret != FunkinLua.Function_Stop) openPauseMenu();
 		}
 
-		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
-		{
+		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene) {
 			switch (curSong) {
 				case 'Cantrocity':
 				    SONG = Song.loadFromJson('scatmann-hard', 'Scatmann');
@@ -2333,8 +2238,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
-		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
 		var toRemove:Float = Math.min(tempMissPenalty, ClientPrefs.tempMissPenaltyDPS * 0.02 * elapsed);
 		if (health - toRemove > 0 || ClientPrefs.tempMissPenaltyCanKill) {
 			health -= toRemove;

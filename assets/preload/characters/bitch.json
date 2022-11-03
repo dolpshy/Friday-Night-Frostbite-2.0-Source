@@ -1,31 +1,31 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				0,
-				25
+				200,
+				332
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				6,
-				19
+				83,
+				-147
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down",
-			"indices": []
+			"indices": [],
+			"name": "down"
 		},
 		{
 			"offsets": [
-				1,
-				29
+				24,
+				148
 			],
 			"loop": false,
 			"fps": 24,
@@ -34,44 +34,44 @@
 			"name": "right"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				0,
-				62
+				437,
+				113
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Up",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				5,
-				54
+				4,
+				63
 			],
-			"anim": "singLEFT",
+			"loop": true,
 			"fps": 24,
-			"name": "Left",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/BITCH",
 	"position": [
-		0,
-		0
+		-310,
+		-170
 	],
-	"healthicon": "subby",
+	"healthicon": "frostbiteilovesex",
 	"flip_x": false,
 	"healthbar_colors": [
-		110,
-		110,
-		240
+		0,
+		95,
+		105
 	],
 	"camera_position": [
-		-40,
-		250
+		-70,
+		130
 	],
 	"sing_duration": 6.1,
 	"scale": 0.7

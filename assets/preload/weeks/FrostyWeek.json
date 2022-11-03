@@ -1,19 +1,13 @@
 {
-	"storyName": "Funkin in a winter skirmish",
 	"difficulties": "EASY, NORMAL, HARD, ERECT, MANIA",
 	"hideFreeplay": false,
-	"weekBackground": "rift",
+	"weekBackground": "week1",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
 	"songs": [
 		[
 			"Chilly",

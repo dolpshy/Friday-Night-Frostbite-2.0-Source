@@ -3,15 +3,9 @@
 		["Tutorial", "gf", [165, 0, 77]]
 	],
 	"difficulties": "EASY, NORMAL, HARD, MANIA",
-	"weekCharacters": [
-		"",
-		"bf",
-		"gf"
-	],
-	"weekBackground": "stage",
+	"weekBackground": "tutorial",
 
 	"storyName": "",
-	"weekBefore": "tutorial",
 	"weekName": "Tutorial",
 	"startUnlocked": true,
 

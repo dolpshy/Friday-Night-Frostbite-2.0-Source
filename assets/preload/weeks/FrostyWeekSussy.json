@@ -1,19 +1,14 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "sus week",
 	"difficulties": "SUS",
 	"hideFreeplay": false,
-	"weekBackground": "stage",
+	"weekBackground": "",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"songs": [
 		[
 			"Sussy-Balls",
@@ -35,5 +30,5 @@
 		]
 	],
 	"hideStoryMode": true,
-	"weekName": "Custom Week"
+	"weekName": "sus sweek"
 }

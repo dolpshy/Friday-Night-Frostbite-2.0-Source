@@ -1,5 +1,5 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "HELP ME",
 	"difficulties": "ITS ME",
 	"hideFreeplay": false,
 	"weekBackground": "",
@@ -21,10 +21,5 @@
 			]
 		]
 	],
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
-	"weekName": "Custom Week"
+	"weekName": "fnaf Week"
 }

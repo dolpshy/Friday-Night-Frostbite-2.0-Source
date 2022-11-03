@@ -2,18 +2,13 @@
 	"storyName": "Now's your chance!",
 	"difficulties": "SPECIL DEAL",
 	"hideFreeplay": false,
-	"weekBackground": "basement",
+	"weekBackground": "",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
 	"songs": [
 		[
 			"Big-shot",

@@ -58,7 +58,7 @@ class CreditsFrostState extends MusicBeatState {
 			['Nesquik', 'nesquik', 'Musician', 'https://www.youtube.com/channel/UCrURywBu-fDA5KQaDPc3GOg', 'FF0A2A'],
 			['ShredBoi', 'shred', "Musician", 'https://www.youtube.com/channel/UCcPW37b_Gb_j0CG3U1B89YQ', '808080'],
 			['Ray', 'ray', 'Musician, Artist, Professional Furry', 'https://www.youtube.com/channel/UCsoHljPC3gBqVTmTpkS8rYg', 'C16BFF'],
-			['Azaria', 'azaria', 'Musician', 'https://www.youtube.com/channel/UC5jj1CMTlCXFMlkwy_JYEyA/videos', '5751FF'],
+			['Azaria', 'azzy', 'Musician', 'https://www.youtube.com/channel/UC5jj1CMTlCXFMlkwy_JYEyA/videos', '5751FF'],
 			['Korv', 'korv', 'Musician', 'https://www.youtube.com/channel/UCtFPl-mDVoINooCR-KMySBw', 'FF0A2A'],
 			['JPR', 'jpr', "Musician", 'https://www.youtube.com/channel/UCW4ISpzbmHPh97JN87Xsq_w', '7F3300'],
 			['Shyllis', 'reel', 'Coder, Musician, Charter', 'https://shyllis.carrd.co/', 'FF3852'],

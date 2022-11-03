@@ -37,11 +37,8 @@ using StringTools;
 
 class WeekEditorState extends MusicBeatState
 {
-	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
 	var lock:FlxSprite;
-	var txtTracklist:FlxText;
-	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
 	var weekThing:MenuItem;
 	var missingFileText:FlxText;
 
@@ -55,10 +52,6 @@ class WeekEditorState extends MusicBeatState
 	}
 
 	override function create() {
-		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
-		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
-		txtWeekTitle.alpha = 0.7;
-		
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
 		var bgYellow:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 386, 0xFFF9CF51);
 		bgSprite = new FlxSprite(0, 56);
@@ -72,8 +65,6 @@ class WeekEditorState extends MusicBeatState
 		var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
 		add(blackBarThingie);
 		
-		grpWeekCharacters = new FlxTypedGroup<MenuCharacter>();
-		
 		lock = new FlxSprite();
 		lock.frames = ui_tex;
 		lock.animation.addByPrefix('lock', 'lock');
@@ -86,29 +77,13 @@ class WeekEditorState extends MusicBeatState
 		missingFileText.borderSize = 2;
 		missingFileText.visible = false;
 		add(missingFileText); 
-		
-		var charArray:Array<String> = weekFile.weekCharacters;
-		for (char in 0...3)
-		{
-			var weekCharacterThing:MenuCharacter = new MenuCharacter((FlxG.width * 0.25) * (1 + char) - 150, charArray[char]);
-			weekCharacterThing.y += 70;
-			grpWeekCharacters.add(weekCharacterThing);
-		}
 
 		add(bgYellow);
 		add(bgSprite);
-		add(grpWeekCharacters);
 
 		var tracksSprite:FlxSprite = new FlxSprite(FlxG.width * 0.07, bgSprite.y + 435).loadGraphic(Paths.image('Menu_Tracks'));
 		tracksSprite.antialiasing = ClientPrefs.globalAntialiasing;
 		add(tracksSprite);
-
-		txtTracklist = new FlxText(FlxG.width * 0.05, tracksSprite.y + 60, 0, "", 32);
-		txtTracklist.alignment = CENTER;
-		txtTracklist.font = Paths.font("vcr.ttf");
-		txtTracklist.color = 0xFFe55777;
-		add(txtTracklist);
-		add(txtWeekTitle);
 
 		addEditorBox();
 		reloadAllShit();
@@ -274,13 +249,8 @@ class WeekEditorState extends MusicBeatState
 		}
 		songsInputText.text = weekString;
 		backgroundInputText.text = weekFile.weekBackground;
-		displayNameInputText.text = weekFile.storyName;
 		weekNameInputText.text = weekFile.weekName;
 		weekFileInputText.text = weekFileName;
-		
-		opponentInputText.text = weekFile.weekCharacters[0];
-		boyfriendInputText.text = weekFile.weekCharacters[1];
-		girlfriendInputText.text = weekFile.weekCharacters[2];
 
 		hideCheckbox.checked = weekFile.hideStoryMode;
 
@@ -302,28 +272,10 @@ class WeekEditorState extends MusicBeatState
 
 	function updateText()
 	{
-		for (i in 0...grpWeekCharacters.length) {
-			grpWeekCharacters.members[i].changeCharacter(weekFile.weekCharacters[i]);
-		}
-
 		var stringThing:Array<String> = [];
 		for (i in 0...weekFile.songs.length) {
 			stringThing.push(weekFile.songs[i][0]);
 		}
-
-		txtTracklist.text = '';
-		for (i in 0...stringThing.length)
-		{
-			txtTracklist.text += stringThing[i] + '\n';
-		}
-
-		txtTracklist.text = txtTracklist.text.toUpperCase();
-
-		txtTracklist.screenCenter(X);
-		txtTracklist.x -= FlxG.width * 0.35;
-		
-		txtWeekTitle.text = weekFile.storyName.toUpperCase();
-		txtWeekTitle.x = FlxG.width - (txtWeekTitle.width + 10);
 	}
 
 	function reloadBG() {
@@ -376,20 +328,14 @@ class WeekEditorState extends MusicBeatState
 			if(sender == weekFileInputText) {
 				weekFileName = weekFileInputText.text.trim();
 				reloadWeekThing();
-			} else if(sender == opponentInputText || sender == boyfriendInputText || sender == girlfriendInputText) {
-				weekFile.weekCharacters[0] = opponentInputText.text.trim();
-				weekFile.weekCharacters[1] = boyfriendInputText.text.trim();
-				weekFile.weekCharacters[2] = girlfriendInputText.text.trim();
+			} else if(sender == opponentInputText || sender == boyfriendInputText || sender == girlfriendInputText)
 				updateText();
-			} else if(sender == backgroundInputText) {
+			else if(sender == backgroundInputText) {
 				weekFile.weekBackground = backgroundInputText.text.trim();
 				reloadBG();
-			} else if(sender == displayNameInputText) {
-				weekFile.storyName = displayNameInputText.text.trim();
-				updateText();
-			} else if(sender == weekNameInputText) {
+			} else if(sender == weekNameInputText)
 				weekFile.weekName = weekNameInputText.text.trim();
-			} else if(sender == songsInputText) {
+			else if(sender == songsInputText) {
 				var splittedText:Array<String> = songsInputText.text.trim().split(',');
 				for (i in 0...splittedText.length) {
 					splittedText[i] = splittedText[i].trim();
@@ -411,11 +357,10 @@ class WeekEditorState extends MusicBeatState
 					}
 				}
 				updateText();
-			} else if(sender == weekBeforeInputText) {
+			} else if(sender == weekBeforeInputText)
 				weekFile.weekBefore = weekBeforeInputText.text.trim();
-			} else if(sender == difficultiesInputText) {
+			else if(sender == difficultiesInputText)
 				weekFile.difficulties = difficultiesInputText.text.trim();
-			}
 		}
 	}
 	
@@ -489,7 +434,7 @@ class WeekEditorState extends MusicBeatState
 			var rawJson:String = File.getContent(fullPath);
 			if(rawJson != null) {
 				loadedWeek = cast Json.parse(rawJson);
-				if(loadedWeek.weekCharacters != null && loadedWeek.weekName != null) //Make sure it's really a week
+				if(loadedWeek.weekName != null) //Make sure it's really a week
 				{
 					var cutName:String = _file.name.substr(0, _file.name.length - 5);
 					trace("Successfully loaded file: " + cutName);

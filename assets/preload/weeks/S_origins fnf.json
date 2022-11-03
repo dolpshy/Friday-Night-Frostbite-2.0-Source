@@ -1,8 +1,8 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "wacky",
 	"difficulties": "WACKY",
 	"hideFreeplay": false,
-	"weekBackground": "stage",
+	"weekBackground": "",
 	"freeplayColor": [
 		146,
 		113,
@@ -21,11 +21,6 @@
 			]
 		]
 	],
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"hiddenUntilUnlocked": false,
-	"weekName": "Custom Week"
+	"weekName": "Origins Week"
 }

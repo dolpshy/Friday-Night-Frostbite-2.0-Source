@@ -76,44 +76,10 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		var curSong:String = PlayState.SONG.song;
 
-		var huh:Int = FlxG.random.int(1, 16);
+		var huh:Int = FlxG.random.int(0, 15);
 		quoteText = new FlxText(0, 0, 625, '', 40);
 		quoteText.setFormat(Paths.font("SansUndertale.ttf"), 40, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-
-		switch(huh)	{ // IM SO FUCKIN STUPID AND I DONT KNOW HOW TO DO IT AUTOMATICLY 
-			case 1:
-				quoteText.text = deathQuotes[0];
-			case 2:
-				quoteText.text = deathQuotes[1];
-			case 3:
-				quoteText.text = deathQuotes[2];
-			case 4:
-				quoteText.text = deathQuotes[3];
-			case 5:
-				quoteText.text = deathQuotes[4];
-			case 6:
-				quoteText.text = deathQuotes[5];
-			case 7:
-				quoteText.text = deathQuotes[6];
-			case 8:
-				quoteText.text = deathQuotes[7];
-			case 9:
-				quoteText.text = deathQuotes[8];
-			case 10:
-				quoteText.text = deathQuotes[9];
-			case 11:
-				quoteText.text = deathQuotes[10];
-			case 12:
-				quoteText.text = deathQuotes[11];
-			case 13:
-				quoteText.text = deathQuotes[12];
-			case 14:
-				quoteText.text = deathQuotes[13];
-			case 15:
-				quoteText.text = deathQuotes[14];
-			case 16:
-				quoteText.text = deathQuotes[15];
-		} // TheReel SUCKS as coder
+		quoteText.text = deathQuotes[huh];
 
 		FlxTween.tween(quoteText, {alpha: 0}, 0.1);
 
@@ -129,7 +95,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		}
 		if (curSong == 'Frozen System' && curSong == 'Frozen System')
 			boyfriend.visible = false;
-
 		add(boyfriend);
 
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
@@ -140,8 +105,6 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
 		Conductor.changeBPM(100);
-		// FlxG.camera.followLerp = 1;
-		// FlxG.camera.focusOn(FlxPoint.get(FlxG.width / 2, FlxG.height / 2));
 		FlxG.camera.scroll.set();
 		FlxG.camera.target = null;
 

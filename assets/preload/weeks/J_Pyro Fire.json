@@ -1,5 +1,5 @@
 {
-	"storyName": "Your New Week",
+	"storyName": "ka ki ke ku",
 	"difficulties": "FIRE",
 	"hideFreeplay": false,
 	"weekBackground": "",
@@ -9,11 +9,6 @@
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"songs": [
 		[
 			"Pyromaniac",
@@ -26,6 +21,6 @@
 		]
 	],
 	"hideStoryMode": true,
-	"weekName": "Custom Week",
+	"weekName": "Fire Week",
 	"hiddenUntilUnlocked": false
 }
